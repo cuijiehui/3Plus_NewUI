@@ -1,0 +1,562 @@
+[
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\advanced_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\advanced_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\country_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\country_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_member.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_member.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feature_dfu.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_feature_dfu.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_pending_friend.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\item_pending_friend.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\prompt_popup_window.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\prompt_popup_window.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\country_item_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\country_item_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menuview.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\menuview.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_fragment_tag_edit.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_fragment_tag_edit.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\remind_notes_item_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\remind_notes_item_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\goals_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\goals_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\welcome.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\welcome.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\inactivity_alert_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\inactivity_alert_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_friend.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\item_friend.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_activity2.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_main_activity2.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_priority_pick.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_priority_pick.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_delete_friend.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\dialog_delete_friend.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_fragment_report.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_fragment_report.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\about_app_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\about_app_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_list_row.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\device_list_row.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\feature_icon.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\feature_icon.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\updatefireware.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\updatefireware.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notifications.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\notifications.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\forgot_pwd_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\forgot_pwd_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_camera.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showwebmain.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\showwebmain.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_time_format_acitivity.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_time_format_acitivity.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_step_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_step_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\time_popupwindow.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\time_popupwindow.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\remind_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\remind_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_find_friends.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_find_friends.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_fragment_guide.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_fragment_guide.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\set_up_device_view1.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\set_up_device_view1.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_vibration.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_vibration.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_time_sleep_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_time_sleep_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_friends.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_friends.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\set_up_device_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\set_up_device_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_quick_signin.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_quick_signin.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_weight_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_weight_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile1.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_profile1.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_features.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_features.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\workouts_data_list.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\workouts_data_list.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_text_item.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_text_item.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\title.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_preset_sleep.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_preset_sleep.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_heart_rate.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_heart_rate.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_plugin.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\drawer_plugin.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_zip_info.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\fragment_zip_info.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dataview_bottom.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\dataview_bottom.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\turnon_zefit_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\turnon_zefit_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_stranger.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\item_stranger.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_list_empty.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\device_list_empty.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_searching_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\device_searching_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_workouts.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_workouts.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_birthday_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_birthday_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_fab_bg.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_fab_bg.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reg_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\reg_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_data_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\fragment_data_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\time_alert_popupwindow.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\time_alert_popupwindow.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_device_selection.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\fragment_device_selection.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\datamenu.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\datamenu.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_tag_state.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_tag_state.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_time_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_time_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\base_setting_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\base_setting_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_advanced_new.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_advanced_new.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dfu_l42_update.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_dfu_l42_update.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_search_list.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\device_search_list.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dvanced_settings.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_dvanced_settings.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\drawer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reminds_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\reminds_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_file_browser.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\app_file_browser.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reminds_list_item.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\reminds_list_item.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_select_device.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_select_device.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_heart_data_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_heart_data_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\units_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\units_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_global_progress.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_global_progress.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wach_face.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_wach_face.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_show_image.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_show_image.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_file_browser_item.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\app_file_browser_item.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_fragment_quick_signin.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_fragment_quick_signin.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\share_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\share_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\turn_on_bluetooth_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\turn_on_bluetooth_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_view_fab_action.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_view_fab_action.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_height_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_height_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reminds_new_main_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\reminds_new_main_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_list_title.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\device_list_title.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_reset.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\startsleep_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\startsleep_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_fragment_login.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_fragment_login.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reset_device_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\reset_device_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\btg_activity.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\layout\\btg_activity.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dfu_updatefirmware.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\activity_dfu_updatefirmware.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\syn_data_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\syn_data_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\login_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_sleep_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\wheel_sleep_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\divice_search_result_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\layout\\divice_search_result_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    }
+]

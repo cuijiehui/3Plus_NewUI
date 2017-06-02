@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:id="@+id/bg_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+
+    <include
+        android:id="@+id/notiTitle"
+        layout="@layout/title" />
+
+    <FrameLayout
+        android:id="@+id/framelayout_top_right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 右边的按钮: 返回1 -->
+        <include layout="@layout/title" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/notice_title"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_left1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+
+            android:background="@drawable/topbtn_rebutn_btn_selector"
+            android:clickable="true"
+            android:onClick="btn_return1_clicked"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn_left2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/topbtn_rebutn_btn_selector"
+            android:clickable="false"
+            android:onClick="btn_return2_clicked"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dip"
+            android:text="@string/reminder_save"
+            android:textColor="#fff"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/showProgressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:visibility="gone"></ProgressBar>
+    </FrameLayout>
+
+    <!--android:background="#bdbdbd"-->
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/notiTitle"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="@dimen/layout_x_20"
+                android:gravity="center_vertical"
+                android:text="@string/notice_alls"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/noti_all_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_marginRight="@dimen/layout_x_10"
+            android:background="@drawable/tr" />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_marginRight="@dimen/layout_x_10"
+            android:background="@drawable/tr" />
+
+
+        <!-- #bdbdbd -->
+        <RelativeLayout
+            android:id="@+id/call_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="@dimen/layout_x_20"
+                android:gravity="center_vertical"
+                android:text="@string/notice_calls"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/noti_call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null"
+                android:checked="false" />
+
+            <ImageView
+                android:id="@+id/img_noti_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_call"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_anti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr" />
+
+        <RelativeLayout
+            android:id="@+id/missed_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/noti_missed_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null" />
+
+            <ImageView
+                android:id="@+id/img_noti_miscall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_miscall"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/missed_call"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="@dimen/layout_x_20"
+                android:layout_toRightOf="@id/img_noti_miscall"
+                android:gravity="center_vertical"
+                android:text="@string/notice_missed_calls"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/noti_call_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr" />
+
+        <RelativeLayout
+            android:id="@+id/sms_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_noti_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_sms"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/img_noti_sms"
+                android:gravity="center_vertical"
+                android:text="@string/notice_sms"
+                android:textColor="@color/white"
+
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/btn_sleepsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr" />
+
+        <RelativeLayout
+            android:id="@+id/email_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_noti_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_email"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/img_noti_email"
+                android:gravity="center_vertical"
+                android:text="@string/notice_email"
+                android:textColor="@color/white"
+
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/noti_email_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/anti_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_y_90"
+            android:background="@color/darkGray"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/text_anti"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="@dimen/layout_x_20"
+                android:layout_toRightOf="@id/img_antilost"
+                android:gravity="center_vertical"
+                android:text="@string/ANTI_LOST"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/anti_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn"
+                android:button="@null" />
+
+            <ImageView
+                android:id="@+id/img_antilost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/noti_antilost" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_noti_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr" />
+
+
+        <RelativeLayout
+            android:id="@+id/social_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_noti_soc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_socmsg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_social"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/img_noti_soc"
+                android:gravity="center_vertical"
+                android:text="@string/notice_social"
+                android:textColor="@color/white"
+
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/noti_social_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/schedule_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_noti_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_cal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/img_noti_cal"
+                android:gravity="center_vertical"
+                android:text="@string/notice_event"
+                android:textColor="@color/white"
+
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/noti_cal_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/line_missed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_marginRight="@dimen/layout_x_10"
+            android:background="@drawable/tr"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/antiost_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_noti_antilost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/noti_antilost"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_antilost"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_y_80"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/img_noti_antilost"
+                android:gravity="center_vertical"
+                android:text="@string/notice_anti_lost"
+                android:textColor="@color/white"
+
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/noti_anti_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_x_20"
+                android:background="@drawable/sw_btn2"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/line_antilost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

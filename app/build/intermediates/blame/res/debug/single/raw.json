@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\blinky_s110_v7_1_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\blinky_s110_v7_1_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_dfu_all_in_one_sdk_v9_0.zip",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_dfu_all_in_one_sdk_v9_0.zip"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_s110_v7_0_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_s110_v7_0_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_dfu_s110_v8_0_0_sdk_v9_0.zip",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_dfu_s110_v8_0_0_sdk_v9_0.zip"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\dfu_mac_3_1.sh",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\dfu_mac_3_1.sh"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_dfu_s110_v8_0_0_sdk_v8_0.zip",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_dfu_s110_v8_0_0_sdk_v8_0.zip"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\readme.txt",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\readme.txt"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_dfu_s110_v7_1_0_ext_init.dat",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_dfu_s110_v7_1_0_ext_init.dat"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\blinky_s110_v7_1_0_ext_init.dat",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\blinky_s110_v7_1_0_ext_init.dat"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\dfu_win_3_1.bat",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\dfu_win_3_1.bat"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_s110_v6_0_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_s110_v6_0_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_rscs_s110_v6_0_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_rscs_s110_v6_0_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\blinky_arm_s110_v7_0_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\blinky_arm_s110_v7_0_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_rscs_s110_v7_0_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_rscs_s110_v7_0_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\ble_app_hrs_dfu_s110_v7_1_0.hex",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\ble_app_hrs_dfu_s110_v7_1_0.hex"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\raw\\server.properties",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\raw\\server.properties"
+    }
+]

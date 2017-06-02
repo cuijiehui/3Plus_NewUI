@@ -1,0 +1,362 @@
+[
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_blue_rect.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_blue_rect.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_eat_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_eat_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_priority_3.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_priority_3.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\calories_bar_layer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\calories_bar_layer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_medicine_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_medicine_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_edit_time_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\btn_edit_time_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_rectangle_shape.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\circle_rectangle_shape.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\toggle_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_btn_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\login_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_del_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\btn_del_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\topbtn_rebutn_btn_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\topbtn_rebutn_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sleep_bar_layer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\sleep_bar_layer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sw_btn2.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\sw_btn2.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_fab.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_fab.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\topbar_bluetooth_not_connected_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\topbar_bluetooth_not_connected_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_user.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_user.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_quick_signin.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_quick_signin.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_gender_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_gender_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_exchange.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_exchange.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_n.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\button_n.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\topbtn_edit_matter_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\topbtn_edit_matter_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_text_black.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_text_black.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_icon_tag_priority.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_icon_tag_priority.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\topbtn_add_matter_finish_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\topbtn_add_matter_finish_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\frame.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\button.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_cross.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_cross.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_val.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\wheel\\unspecified\\res\\drawable\\wheel_val.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\activity_bar_layer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\activity_bar_layer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_week_shape.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\alert_week_shape.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_week_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\alert_week_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_tick.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_tick.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_p.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\button_p.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_week_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\toggle_week_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_green_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\btn_green_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_arrow_down.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_arrow_down.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame2.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\frame2.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\steps_bar_layer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\steps_bar_layer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_remind_notes_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_remind_notes_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_priority_0.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_priority_0.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_sport_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_sport_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_priority_1.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_priority_1.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\distance_bar_layer.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\distance_bar_layer.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_go.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\toggle_go.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_defined_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_defined_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_white_rect.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_white_rect.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_average.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\btn_average.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\find_friend.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\find_friend.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_week_no_shape.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\alert_week_no_shape.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_aboutus_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\btn_aboutus_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_steps_remind_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_steps_remind_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\frame1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rbn_status.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rbn_status.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_report.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_report.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_wake_up_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_wake_up_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_right.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_right.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame3.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\frame3.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sleep_btn_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\sleep_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_publish.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_publish.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_priority_2.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_priority_2.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_bg.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\wheel_bg.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\textview_border.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\textview_border.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rb_sleep_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\rb_sleep_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_text_white.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_text_white.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btg_btn_left.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable\\btg_btn_left.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reg_btn_selector.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable\\reg_btn_selector.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\wheel\\unspecified\\res\\drawable\\wheel_view.xml"
+    }
+]

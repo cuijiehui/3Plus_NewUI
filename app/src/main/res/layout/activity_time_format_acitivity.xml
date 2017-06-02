@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical">
+
+            <!-- 右边的按钮: 返回1 -->
+
+            <ImageButton
+                android:id="@+id/btn_left1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="true"
+                android:onClick="btn_return1_clicked"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btn_left2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="false"
+                android:onClick="btn_return2_clicked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dp"
+                android:onClick="preset_sleep_save"
+                android:text="@string/reminder_save"
+                android:textColor="#fff"
+                android:textSize="22dip"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </FrameLayout>
+    <!--L39 时间格式设置-->
+    <ScrollView
+        android:id="@+id/sv_l39_time_format"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--new1-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_time12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0001" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_time12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_time12"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour12_time"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--new2-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_time24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0002" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_time24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_time24"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour24_time"
+
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--3-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDate12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0003" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDate12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDate12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour12_time_date"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--4-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDate24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0004" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDate24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDate24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour24_time_date"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <!--5-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDateBatHeartName12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_6"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0005" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDateBatHeartName12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDateBatHeartName12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_6"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour12_date_battery_module"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--TIME+DATE+BATTERY\nHEART RATE+NAME\n24H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDateBatHeartName24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_5"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0006" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDateBatHeartName24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDateBatHeartName24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_5"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour24_date_battery_module"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--7-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_vertival_time12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0007" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_vertival_time12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_vertival_time12"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour12_time_vertical"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--8-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_vertival_time24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_4"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0008" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_vertival_time24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_vertival_time24"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_4"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour24_time_vertical"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--9-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_vertical12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_8"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0009" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_vertical12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_vertical12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_8"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour12_time_vertical_date"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold"
+                        android:id="@+id/textView7" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--9-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_vertical24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_7"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0010" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_vertical24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_vertical24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_7"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour24_time_vertical_date"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--VERTICAL\nTIME+DATE\n12-H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_verticalTimeDate12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_10"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0011" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_verticalTimeDate12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_verticalTimeDate12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour12_date_vertical_battery_module"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--VERTICAL\nTIME+DATE\n24-H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_verticalTimeDate24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_9"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0012" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_verticalTimeDate24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_verticalTimeDate24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_9"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hour24_date_vertical_battery_module"
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

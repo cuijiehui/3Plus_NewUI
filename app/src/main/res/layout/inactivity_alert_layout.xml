@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    android:id="@+id/main">
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical">
+
+            <!-- 右边的按钮: 返回1 -->
+
+            <ImageButton
+                android:id="@+id/btn_left1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="true"
+                android:onClick="btn_return1_clicked"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btn_left2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="false"
+                android:onClick="btn_return2_clicked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dp"
+                android:text="@string/reminder_save"
+                android:textColor="#fff"
+                android:textSize="22dip"
+                android:onClick="inactivity_save"
+                android:visibility="visible" />
+
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="10dip"
+            android:text="@string/inactivity_alert"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/btn_auto_heartrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/sw_btn2"
+            android:button="@null"
+            android:checked="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alert_interval"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="10dip"
+            android:text="@string/inactivity_alert_interval"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_alert_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_alert_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="1h30min"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_alert_interval2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/go_in1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alert_start"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="10dip"
+            android:text="@string/inactivity_alert_start"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_alert_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_alert_start"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="8:00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_alert_start2"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/go_in1"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text=" AM"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_alert_end"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="10dip"
+            android:text="@string/inactivity_alert_end"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_alert_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_alert_end"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="8:00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_alert_end2"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/go_in1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text=" AM"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_alert_steps"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="10dip"
+            android:text="@string/steps"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_alert_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_alert_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_alert_steps2"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/go_in1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text=" Steps"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/repeat"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dip"
+        android:paddingLeft="10dip"
+
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_su"
+                    android:textOn="@string/reminder_su"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_m"
+                    android:textOn="@string/reminder_m"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_tu"
+                    android:textOn="@string/reminder_tu"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_wed"
+                    android:textOn="@string/reminder_wed"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_th"
+                    android:textOn="@string/reminder_th"
+                    android:textSize="20dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_f"
+                    android:textOn="@string/reminder_f"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/tb_inactivity_Item7"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/alert_week_selector"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/reminder_sa"
+                    android:textOn="@string/reminder_sa"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

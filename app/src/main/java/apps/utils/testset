@@ -1,0 +1,957 @@
+package com.ysp.phonestatus.service;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import android.app.Service;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.database.ContentObserver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Handler;
+import android.os.IBinder;
+import android.provider.CallLog.Calls;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.ysp.l30band.L30BandApplication;
+import com.ysp.l30band.bluetooth.BluetoothUtils;
+import com.ysp.l30band.bluetooth.WriteData;
+import com.ysp.l30band.utils.Logger;
+import com.ysp.l30band.utils.PublicData;
+import com.ysp.phoneContact.ContactUtils;
+import com.ysp.phonestatus.service.MyNotification.MsgInOutTime;
+
+/**
+ *
+ * @version: 1.01
+ * @author zenglinguo@appscomm.cn
+ * */
+public class MyPushMsgService extends Service {
+
+
+	private final static String TAG = "MyPushMsgService";
+
+	private static final int NO_RESPOND = -3; // 无需响应的蓝牙命令
+
+	private final ContentObserver mSmsMmsObserver = new SmsMmsContentObserver();
+	private final ContentObserver mContactsObserver = new ContactsContentObserver();
+
+	public static int misCallnum = 0;// 未接电话
+	public static int unReadsmsNum = 0;// 未接短息
+	private static String CallingName, callingNO, smsNO, smsText, smsName, smsTime;
+	// misCallName,misCallNO,
+	private static int subversion = 0; // 子版本
+
+	private Msginfo curMsg = new Msginfo();
+	private UnAnsCall curUnAnsCall = new UnAnsCall();
+	public static int sendOrderIndex = NO_RESPOND; // -1取版本号， 0通话中电话姓名
+													// 1.未接电话姓名/未接电话号码 2，未接电话数量
+													// 3 未接电话时间
+	// 5 未读短信 名字、号码 6短信内容 7 短信日期 8 短信提醒（B1) 9 //未读邮件 10 /日历 11 /社交软件
+	private int sendOrderType = 0; // 0，通话中电话推送姓名 1,未接电话推送 2.新短信推送 3 消息推送
+	// private boolean isConnect = false;
+	private boolean needrespond = false;
+	private TelephonyManager tm;
+	private int isEnablesms = 0, isEnableCall = 0, isEnableemail = 0, isEnableschedule = 0, isEnablesocial = 0;
+
+	private static int mailMsgCount = 0;
+	private static int calMsgCount = 0; // 日历提醒
+	private static int socMsgCount = 0; // 社交媒体
+
+	private Timer timer1;
+
+	private static boolean showDebugToast = false;
+
+	private long recentSetTime = 0;
+	private static int gmailCount, outlookcount, qqmailCount, androidCalCount, gCalCount, qqLiteCount, qqCount, facebCount, twitterCount, lineCount,
+			whatAppCount, weixiCount, skype1Count, skype2Count, instCount;
+
+	private MyCallListener customPhoneListener;
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		return null;
+
+	}
+
+	private void refreshMsgCount() {
+		mailMsgCount = gmailCount + outlookcount + qqmailCount;
+		calMsgCount = androidCalCount + gCalCount;
+		socMsgCount = qqLiteCount + qqCount + facebCount + twitterCount + lineCount + whatAppCount + weixiCount + skype1Count + skype2Count + instCount;
+	}
+
+	class UnAnsCall {
+
+		public String name = "";
+		public String callNo = "";
+		public int namePacketCount = 1;
+		public int nameIndex = 1;
+
+	}
+
+	class Msginfo {
+
+		public String name;
+		public int nameindex = 1;
+		public int namePacketCount = 1;
+		public String phoneNo;
+		public String content;
+		public int contentindex = 1;
+		public int contentPacketCount = 1;
+		public long recvTimeMs;
+
+	}
+
+	private void getPhoneStatus() {
+		try {
+			isEnablesms = L30BandApplication.getInstance().sp.getInt("sms", 1);
+			isEnableCall = L30BandApplication.getInstance().sp.getInt("missed_call", 1);
+
+			isEnableemail = L30BandApplication.getInstance().sp.getInt("notice_email", 1);
+			isEnableschedule = L30BandApplication.getInstance().sp.getInt("notice_schedule", 1);
+			isEnablesocial = L30BandApplication.getInstance().sp.getInt("notice_social", 1);
+
+			Log.d(TAG, "isenablesms,miscall:" + isEnablesms + "," + isEnableCall);
+		} catch (Exception e) {
+			isEnablesms = 1;
+			isEnableCall = 1;
+			isEnableemail = 1;
+			isEnableschedule = 1;
+			isEnablesocial = 1;
+		}
+	}
+
+	class MyCallListener extends PhoneStateListener {
+		private static final String TAG = "CallListener";
+		private int lastetState = TelephonyManager.CALL_STATE_IDLE; // 最后的状态
+		private Context context;
+		private String lastCallNo;
+
+		public MyCallListener(Context context) {
+			super();
+			this.context = context;
+
+		}
+
+		public void onCallStateChanged(int state, String incomingNumber) {
+			Log.v(TAG, "<<==CallListener call state changed : " + incomingNumber);
+
+			getPhoneStatus();
+
+			Log.d(TAG, "<<==state:" + state + "  " + lastCallNo);
+
+			if (lastetState == TelephonyManager.CALL_STATE_RINGING && state == TelephonyManager.CALL_STATE_IDLE) {
+				String name = "";
+				try {
+					name = getContactNameByNumber(context, lastCallNo);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				if (showDebugToast)
+					Toast.makeText(context, "：" + "未接号码:" + lastCallNo + "   " + name, Toast.LENGTH_SHORT).show();
+
+				/*
+				 * misCallName = name; misCallNO = lastCallNo;
+				 */
+				curUnAnsCall.name = name;
+
+				if ((curUnAnsCall.name != null) && (curUnAnsCall.name.getBytes().length > 57)) {
+					curUnAnsCall.namePacketCount = 2;
+					curUnAnsCall.nameIndex = 1;
+				} else {
+					curUnAnsCall.namePacketCount = 1;
+
+					curUnAnsCall.nameIndex = 1;
+				}
+				curUnAnsCall.callNo = lastCallNo;
+
+				sendOrderType = 1;
+				setSendIndex(1);
+
+				if (BluetoothUtils.isConnect) {
+
+					new SendDataThread().start();
+
+				} else {
+					connectBluetooth();
+				}
+			}
+
+			lastetState = state;
+
+			switch (state) {
+			case TelephonyManager.CALL_STATE_RINGING:
+				lastCallNo = incomingNumber;
+
+				String name = "";
+				try {
+					name = getContactNameByNumber(context, incomingNumber);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				if (showDebugToast)
+					Toast.makeText(context, "：" + "来电号码:" + incomingNumber + "   " + name, Toast.LENGTH_SHORT).show();
+
+				Log.d("new-test2", "incomming call :" + incomingNumber + "  -  " + name);
+
+				if ((name != null) && name.length() > 0) {
+					sendOrderType = 0;
+					setSendIndex(-1);
+
+					CallingName = name;
+					callingNO = incomingNumber;
+
+					if (BluetoothUtils.isConnect) {
+
+						new SendDataThread().start();
+
+					} else {
+						connectBluetooth();
+					}
+				}
+
+				Log.d(TAG, "<<==RINGING");
+				break;
+			case TelephonyManager.CALL_STATE_IDLE:
+				Log.d(TAG, "<<==IDLE");
+				break;
+			case TelephonyManager.CALL_STATE_OFFHOOK:
+				Log.d(TAG, "<<==OFFHOOK");
+				break;
+			}
+		}
+
+	}
+
+	private String getContactNameByNumber(Context context, String phoneNumber) throws Exception {
+
+		try {
+			String number = phoneNumber;
+			Uri uri = Uri.parse("content://com.android.contacts/data/phones/filter/" + number);
+			ContentResolver resolver = context.getContentResolver();
+			Cursor cursor = resolver.query(uri, new String[] { "display_name" }, null, null, null);
+			if (cursor != null) {
+				if (cursor.moveToFirst()) {
+					String name = cursor.getString(0);
+					Log.i(TAG, name);
+					if (name != null) {
+						cursor.close();
+						return name;
+					}
+				}
+			}
+			return null;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public static String bytes2HexString(byte[] b) {
+
+		String ret = "";
+		if (b == null)
+			return ret;
+		for (int i = 0; i < b.length; i++) {
+			String hex = Integer.toHexString(b[i] & 0xFF);
+			if (hex.length() == 1) {
+				hex = '0' + hex;
+			}
+			ret += hex.toUpperCase();
+		}
+		return ret;
+	}
+
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		Log.e("", "-------------come service------------------");
+		getPhoneStatus();
+		registerObserver();
+		// Intent intent = new Intent(UN_ANSWER_PHONE);
+		// phone_num =
+		// ContactUtils.UpdateUnAnsweredCalls(getApplicationContext());
+		// Log.e("", "未接电话===" + phone_num);
+		// intent.putExtra("unReadPhoneNum", phone_num);
+		// sendBroadcast(intent);
+		initBroadcastReceiver();
+
+		unReadsmsNum = ContactUtils.UpdateUnreadMmsSms(getApplicationContext());
+		Log.e("", "未读短信===" + unReadsmsNum);
+
+		tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+		customPhoneListener = new MyCallListener(this);
+
+		tm.listen(customPhoneListener, PhoneStateListener.LISTEN_CALL_STATE);
+
+		initReceiver();
+
+		timer1 = new Timer();
+		timer1.schedule(new TimerTask() {
+
+			@Override
+			public void run() {
+
+				if ((System.currentTimeMillis() - recentSetTime) > 3000)
+					sendOrderIndex = NO_RESPOND;
+
+				// TODO Auto-generated method stub
+
+			}
+		}, 1000, 1000);
+
+		/*
+		 * Intent intent = new
+		 * Intent("android.provider.Telephony.SMS_RECEIVED"); List<ResolveInfo>
+		 * infos = getPackageManager().queryBroadcastReceivers(intent, 0); for
+		 * (ResolveInfo info : infos) { Log.d("new-test2","Receiver name:" +
+		 * info.activityInfo.name + "; priority=" + info.priority);
+		 *
+		 * }
+		 */
+	}
+
+	private void setSendIndex(int i) {
+		recentSetTime = System.currentTimeMillis();
+		sendOrderIndex = i;
+	}
+
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		unregisterObserver();
+		unReceiver();
+		unregisterReceiver();
+	}
+
+	/**
+	 * 取消注册数据库监听
+	 */
+	private void unregisterObserver() {
+		// if (mSmsMmsObserver != null)
+		getContentResolver().unregisterContentObserver(mSmsMmsObserver);
+		getContentResolver().unregisterContentObserver(mContactsObserver);
+
+	}
+
+	/**
+	 * 注册数据库监听
+	 */
+	private void registerObserver() {
+
+		getContentResolver().registerContentObserver(Calls.CONTENT_URI, true, mContactsObserver);
+		getContentResolver().registerContentObserver(Uri.parse("content://sms"), true, mSmsMmsObserver);
+	}
+
+	/**
+	 * 联系人数据库监听 -- 未接电话
+	 *
+	 * @author E-show
+	 */
+	private class ContactsContentObserver extends ContentObserver {
+
+		public ContactsContentObserver() {
+			super(new Handler());
+		}
+
+		@Override
+		public void onChange(boolean selfChange) {
+			Log.i("", "ContactsContentObserver , onChange");
+//			String deviceId=L30BandApplication.getInstance().deviceMsg.getDeviceId();
+//			if ("null".equals(deviceId)||TextUtils.isEmpty(deviceId)) {
+//	           return;
+//			}
+
+			getPhoneStatus();
+
+			int mNum = ContactUtils.UpdateUnAnsweredCalls(getApplicationContext());
+			Log.e("", "-----------未接电话------------" + misCallnum);
+
+			if (mNum < misCallnum) {
+
+				misCallnum = mNum;
+				if (showDebugToast)
+					Toast.makeText(getApplicationContext(), "未接电话数 change" + misCallnum, Toast.LENGTH_LONG).show();
+			}
+
+			super.onChange(selfChange);
+		}
+	}
+
+	/**
+	 * 短信数据库监听
+	 *
+	 * @author E-show
+	 */
+	private class SmsMmsContentObserver extends ContentObserver {
+
+		public SmsMmsContentObserver() {
+			super(new Handler());
+		}
+
+		@Override
+		public void onChange(boolean selfChange) {
+
+//			String deviceId=L30BandApplication.getInstance().deviceMsg.getDeviceId();
+//			if ("null".equals(deviceId)||TextUtils.isEmpty(deviceId)) {
+//	           return;
+//			}
+			Logger.msg(TAG,"监听到短信内容有变化");
+
+			getPhoneStatus();
+
+			if (isEnablesms == 0)
+				return;
+			int mNum = ContactUtils.UpdateUnreadMmsSms(getApplicationContext());
+
+			if (mNum == unReadsmsNum)
+				return;
+
+			if ((mNum > 0) && (mNum > unReadsmsNum)) // 新短信
+			{
+
+				curMsg = getSmsFromPhone();
+				if (showDebugToast)
+					Toast.makeText(getApplicationContext(), "  新短信数：" + mNum + "," + curMsg.content, Toast.LENGTH_LONG).show();
+
+				// 5 未读短信 名字、号码  6短信内容 7 短信日期 8 短信提醒（B1)
+				sendOrderType = 2;
+				setSendIndex(5);
+
+				if (BluetoothUtils.isConnect) {
+
+					new SendDataThread().start();
+
+				} else {
+					connectBluetooth();
+				}
+
+			}
+
+			else if (mNum < unReadsmsNum) // 查看短信
+			{
+				if (showDebugToast)
+					Toast.makeText(getApplicationContext(), "未读短信数：" + mNum, Toast.LENGTH_SHORT).show();
+
+			}
+
+			Log.e(TAG, "-----------未读短信-----" + mNum + "," + unReadsmsNum);
+			unReadsmsNum = mNum;
+
+			super.onChange(selfChange);
+		}
+	}
+
+	/** 连接蓝牙 */
+	private void connectBluetooth() {
+		if (BluetoothUtils.getBluetoothAdapter() != null) {
+
+			Log.d("new-test2", "connect bluetooth");
+			if (BluetoothUtils.getBluetoothAdapter().isEnabled()) {
+
+				BluetoothUtils b = BluetoothUtils.getInstance(this);
+				if (b.getDeviceAddress("ZeWatch2") == null) {
+					b.getBlueDevice(b.getDeviceAddress("ZEWATCH2"));
+				} else
+					b.getBlueDevice(b.getDeviceAddress("ZeWatch2"));
+
+				if (b.getDeviceAddress("ZeWatch2") != null || b.getDeviceAddress("ZEWATCH2") != null) {
+					b.startConnect();
+				}
+			}
+		}
+	}
+
+	SMSBroadcastReceiver smsReceiver;
+
+	private void initReceiver() {
+		// smsReceiver = new SMSBroadcastReceiver();
+		// IntentFilter filter = new IntentFilter();
+		// filter.addAction("android.provider.Telephony.SMS_RECEIVED");
+		// filter.setPriority(1000);
+		// registerReceiver(smsReceiver, filter);
+	}
+
+	private void unReceiver() {
+		/*
+		 * if (smsReceiver != null) unregisterReceiver(smsReceiver);
+		 */
+	}
+
+	private Uri SMS_INBOX = Uri.parse("content://sms/inbox");
+
+	public Msginfo getSmsFromPhone() {
+
+		try {
+			Msginfo msg1 = new Msginfo();
+			ContentResolver cr = getContentResolver();
+			String[] projection = new String[] { "address", "person", "body", "date" };// "_id",
+																						// "address",
+																						// "person",,
+																						// "date",
+																						// "type
+			String where = " type = 1 and read = 0 and  date >  " + (System.currentTimeMillis() - 30 * 1000);
+			Cursor cur = cr.query(SMS_INBOX, projection, where, null, "date desc");
+			if (null == cur)
+				return null;
+			if (cur.moveToNext()) {
+
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+				String number = cur.getString(cur.getColumnIndex("address"));// 手机号
+				String name = "1";
+				try {
+					name = getContactNameByNumber(getApplicationContext(), number);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} // cur.getString(cur.getColumnIndex("person"));//联系人姓名列表
+				String body = cur.getString(cur.getColumnIndex("body"));
+				Logger.msg(TAG,"短信内容："+body);
+				String time = sdf.format(new Date(cur.getLong((cur.getColumnIndex("date")))));
+
+				msg1.name = name;
+				msg1.phoneNo = number;
+				msg1.content = body;
+				msg1.recvTimeMs = cur.getLong((cur.getColumnIndex("date")));
+				msg1.contentindex = 1;
+				msg1.nameindex = 1;
+
+				if (name == null) {
+					msg1.namePacketCount = 1;
+				} else {
+
+					if (name.getBytes().length > 57)
+						msg1.namePacketCount = 2;
+					else
+						msg1.namePacketCount = 1;
+				}
+
+				if (body == null) {
+					msg1.contentPacketCount = 1;
+				} else {
+					if (body.getBytes().length > 57)
+						msg1.contentPacketCount = 2;
+					else
+						msg1.contentPacketCount = 1;
+				}
+
+				return msg1;
+			}
+
+			return null;
+		} catch (Exception e) {
+
+			return null;
+		}
+
+	}
+
+	public class SMSBroadcastReceiver extends BroadcastReceiver {
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			Log.d("new-test2", "new Msg incoming");
+
+		}
+	}
+
+	private BlueBroadcastReceiver bleBroadcastReceiver;
+
+	private void initBroadcastReceiver() {
+		if (bleBroadcastReceiver == null) {
+			bleBroadcastReceiver = new BlueBroadcastReceiver();
+			IntentFilter intentFilter = new IntentFilter();
+			intentFilter.addAction(BluetoothUtils.BLUETOOTH_DATA);
+			intentFilter.addAction(BluetoothUtils.BLUETOOTH_CONNECT);
+			intentFilter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);
+			intentFilter.addAction(MyNotification.NEW_NOTIFICATION);
+			intentFilter.addAction(MyNotification.DEL_NOTIFICATION);
+
+			registerReceiver(bleBroadcastReceiver, intentFilter);
+		}
+	}
+
+	private void unregisterReceiver() {
+		if (bleBroadcastReceiver != null) {
+			unregisterReceiver(bleBroadcastReceiver);
+			bleBroadcastReceiver = null;
+		}
+	}
+
+
+
+	private class SendDataThread extends Thread {
+
+		int timeout = 0;
+
+		@Override
+		public void run() {
+			super.run();
+
+			// private int sendOrderIndex =-1; // -1取版本号， 0通话中电话姓名 1.未接电话姓名
+			// /未接电话号码 2，未接电话数量 3 未接电话时间
+			// 5 未读短信
+
+			Log.d("new-test2", "run send data  send index :" + sendOrderIndex);
+			Logger.msg(TAG, "run send data  send index :" + sendOrderIndex);
+			if (sendOrderIndex == -1)
+				WriteData.writeDeviceMsg(3);
+			else if (sendOrderIndex == 0) {
+				if (subversion > 22)
+					WriteData.writePhoneCall2(CallingName, callingNO);
+				else
+					WriteData.writePhoneCall(CallingName, callingNO);
+			} else if (sendOrderIndex == 1) {
+				try {
+					sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				Logger.msg(TAG,"推送未接来电条条目数"+curUnAnsCall.name+" "+curUnAnsCall.callNo);
+
+				if ((curUnAnsCall.name != null) && (curUnAnsCall.name.length() > 0))
+					WriteData.writeUnReadCallName(curUnAnsCall.name, curUnAnsCall.nameIndex);
+				else if ((curUnAnsCall.callNo != null) && (curUnAnsCall.callNo.length() > 0))
+					WriteData.writeUnReadCallName(curUnAnsCall.callNo, 1);
+			} else if (sendOrderIndex == 2) {
+				misCallnum = ContactUtils.UpdateUnAnsweredCalls(getApplicationContext());
+				WriteData.writeUnReadPhone(misCallnum);
+			} else if (sendOrderIndex == 5) {
+
+				Logger.msg(TAG,"推送未读短信联系方式："+curMsg.name+"  "+curMsg.phoneNo);
+				if (curMsg.name == null) {
+					WriteData.writeSms_contactName(curMsg.phoneNo, 1);
+
+				} else {
+					if ((curMsg.name != null) && (curMsg.name.length() > 0))
+						WriteData.writeSms_contactName(curMsg.name, curMsg.nameindex);
+					else
+						WriteData.writeSms_contactName(curMsg.phoneNo, 1);
+				}
+			} else if (sendOrderIndex == 6) {
+				Logger.msg(TAG,"推送短信内容："+curMsg.content);
+				WriteData.writeSms_content(curMsg.content,curMsg.contentindex);
+
+			} else if (sendOrderIndex == 7) {
+				WriteData.writeSms_date(curMsg.recvTimeMs);
+			} else if (sendOrderIndex == 8) {
+				Logger.msg(TAG,"推送未读短信的个数");
+				WriteData.writeUnReadMsm(unReadsmsNum);
+			} else if (sendOrderIndex == 9) // 未读邮件
+			{
+				Logger.msg(TAG,"推送未读email的个数");
+				if (isEnableemail == 1)
+					WriteData.writeUnReadEmail(mailMsgCount);
+			}
+
+			else if (sendOrderIndex == 10) // 日历
+			{
+				if (isEnableschedule == 1)
+					WriteData.writeUnReadSchedule(calMsgCount);
+			}
+
+			else if (sendOrderIndex == 11) // 社交软件
+			{
+				Logger.msg(TAG,"推送社交信息num");
+				if (isEnablesocial == 1)
+					WriteData.writeUnReadSocial(socMsgCount);
+			}
+
+			// 5 未读短信 名字、号码 6短信内容 7 短信日期 8 短信提醒（B1) 9 //未读邮件 10 /日历 11 /社交软件
+
+			Log.d("new-test2", "write data finish");
+
+			try {
+				sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return;
+		}
+
+	}
+
+	private class BlueBroadcastReceiver extends BroadcastReceiver {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+
+			Log.d("new-test2", "recving intecnt :" + intent.getAction());
+			if (intent.getAction().equals(BluetoothUtils.BLUETOOTH_DATA)) {
+				byte[] data = intent.getExtras().getByteArray("data");
+				Log.d("new-test2", "recving bluetoothData :" + bytes2HexString(data));
+
+				if (sendOrderIndex < -1)
+					return;
+
+				Log.d("new-test2", "parse bluetoothData : sendOrderIndex is :" + sendOrderIndex);
+
+				if ((data[1] == 0x01) && (data.length == 6)) // 数据返回的
+				{
+                    Logger.msg("数据返回");
+					// 6e 01 01 5d 00 8f
+					if ((data[3] == 0x5d) && (data[4] == 0)) {
+						if ((curUnAnsCall.namePacketCount == 2) && (curUnAnsCall.nameIndex == 1)) {
+							setSendIndex(1);
+							curUnAnsCall.nameIndex = 2;
+						} else {
+							setSendIndex(2);
+						}
+
+						new SendDataThread().start();
+
+					} else if ((data[3] == 0x5e) && (data[4] == 0)) // 短信姓名或号码
+					{
+						// 12-03 09:54:46.798: D/bluetoothdata(24670): 接收的数据==6e
+						// 01 01 5e 00 8f
+						Logger.msg("短信姓名或号码");
+						if ((curMsg.namePacketCount == 2) && (curMsg.nameindex == 1)) {
+							setSendIndex(5); // msg
+							curMsg.nameindex = 2;
+
+						} else {
+							setSendIndex(6); // msg content
+
+						}
+						new SendDataThread().start();
+					}
+
+					else if ((data[3] == 0x5f) && (data[4] == 0)) // 内容
+					{
+						// 12-03 09:54:46.798: D/bluetoothdata(24670): 接收的数据==6e
+						// 01 01 5f 00 8f
+						Logger.msg("内容");
+						if ((curMsg.contentPacketCount == 2) && (curMsg.contentindex == 1)) {
+							setSendIndex(6); // msg time
+							curMsg.contentindex = 2;
+						} else {
+							setSendIndex(7); // msg time
+
+						}
+
+						new SendDataThread().start();
+
+					}
+
+					else if ((data[3] == 0x61) && (data[4] == 0)) {
+						// 12-03 09:54:46.798: D/bluetoothdata(24670): 接收的数据==6e
+						// 01 01 61 00 8f
+						Logger.msg("-----0");
+						setSendIndex(8); // msg count
+						new SendDataThread().start();
+
+					}
+
+				} else if ((data[1] == 0x01) && (data.length == 8)) {
+					Logger.msg("-----1");
+					if (data[2] == 0x09) {
+						int cc2540 = data[3] & 0xff;
+						int cc2540_ = data[4] & 0xff;
+						String verString = cc2540 + "." + cc2540_;
+
+						subversion = cc2540_;
+
+						Log.d(TAG, "设备子版本:" + subversion);
+
+						switch (sendOrderType) {
+						case 0:
+							setSendIndex(0);
+							new SendDataThread().start();
+							break;
+
+						case 1:
+
+							break;
+
+						case 2:
+
+							break;
+						default:
+							break;
+						}
+
+					}
+				}
+
+				/*
+				 * if (sendType == 1) { unReadMsm = 0; } else { phone_num = 0; }
+				 */
+			} else if (intent.getAction().equals(BluetoothUtils.BLUETOOTH_CONNECT)) {
+				Logger.msg("blue Connect");
+				Log.d("new-test2", "connect ok... orderIndex is :" + sendOrderIndex);
+
+				if (sendOrderIndex < -1)
+					return;
+
+				Log.d("new-test2", "parse bluetoothData : sendOrderIndex is :" + sendOrderIndex);
+
+				switch (sendOrderType) {
+				case 0:
+					setSendIndex(-1);
+					new SendDataThread().start();
+					break;
+
+				case 1:
+					setSendIndex(-1);
+					new SendDataThread().start();
+					break;
+
+				case 2:
+					setSendIndex(5);
+					new SendDataThread().start();
+					break;
+
+				case 3:
+					new SendDataThread().start();
+					break;
+
+				default:
+					break;
+				}
+
+			}
+
+			else if (intent.getAction().equals(MyNotification.NEW_NOTIFICATION)) {
+				String pkgName = intent.getStringExtra("event");
+				Logger.msg("new message notify");
+				if (pkgName == null)
+					return;
+
+				Log.d("new-test3", "get event :" + pkgName);
+				if (pkgName.toLowerCase().contains(MyNotification.GMAIL_PKG)) {
+					gmailCount++;
+					setSendIndex(9);
+				} else if (pkgName.contains(MyNotification.OUTLOOK_PKG)) {
+					outlookcount++;
+					setSendIndex(9);
+				} else if (pkgName.toLowerCase().contains(MyNotification.QQMAIL_PKG)) {
+					qqmailCount++;
+					setSendIndex(9);
+				} else if ((pkgName.toLowerCase().contains(MyNotification.SCHEDULE_PKG)) || (pkgName.toLowerCase().contains(MyNotification.SCHEDULE_HTC_PKG))) {
+					androidCalCount++;
+					setSendIndex(10);
+				} else if (pkgName.toLowerCase().contains(MyNotification.GMAIL_SCHEDULE_PKG)) {
+					gCalCount++;
+					setSendIndex(10);
+				} else if (pkgName.toLowerCase().contains(MyNotification.QQLIST_PKG)) {
+					qqLiteCount++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.MOBILEQQ_PKG)) {
+					qqCount++;
+					setSendIndex(11);
+				} else if ((pkgName.toLowerCase().contains(MyNotification.FACEBOOK_PKG)) || (pkgName.toLowerCase().contains(MyNotification.FBMSG_PKG))) {
+					facebCount++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.TWITTER_PKG)) {
+					twitterCount++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.WHATSAPP_PKG)) {
+					whatAppCount++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.MM_PKG)) {
+					weixiCount++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.LINE_PKG)) {
+					lineCount++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.SKYPE_PKG)) {
+					skype1Count++;
+					setSendIndex(11);
+				} else if ((pkgName.toLowerCase().contains(MyNotification.SKYPE_PKG2)) || (pkgName.toLowerCase().contains(MyNotification.SKYPE_PKG3))) {
+					skype2Count++;
+					setSendIndex(11);
+				} else if (pkgName.toLowerCase().contains(MyNotification.INSTAGRAM_PKG)) {
+					instCount++;
+					setSendIndex(11);
+				}
+
+				if (sendOrderIndex < -1)
+					return;
+				sendOrderType = 3;
+
+				refreshMsgCount();
+
+				Log.d("new-test3", "add noti:  " + ":" + pkgName + ":sendindex :" + sendOrderIndex);
+				if (BluetoothUtils.isConnect) {
+					Log.d("new-test3", "send.data");
+					new SendDataThread().start();
+
+				} else {
+					Log.d("new-test3", "connect..");
+					connectBluetooth();
+				}
+
+			}
+
+			else if (intent.getAction().equals(MyNotification.DEL_NOTIFICATION)) {
+				String pkgName = intent.getStringExtra("event");
+				Logger.msg("del message ");
+				if (pkgName == null)
+					return;
+				if (pkgName.toLowerCase().contains(MyNotification.GMAIL_PKG)) {
+					gmailCount = 0; /* setSendIndex(9); */
+					;
+				} else if (pkgName.contains(MyNotification.OUTLOOK_PKG)) {
+					outlookcount = 0; /* setSendIndex(9); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.QQMAIL_PKG)) {
+					qqmailCount = 0; /* setSendIndex(9); */
+				} else if ((pkgName.toLowerCase().contains(MyNotification.SCHEDULE_PKG)) || (pkgName.toLowerCase().contains(MyNotification.SCHEDULE_HTC_PKG))) {
+					androidCalCount = 0; /* setSendIndex(10); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.GMAIL_SCHEDULE_PKG)) {
+					gCalCount = 0; /* setSendIndex(10); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.QQLIST_PKG)) {
+					qqLiteCount = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.MOBILEQQ_PKG)) {
+					qqCount = 0; /* setSendIndex(11); */
+				} else if ((pkgName.toLowerCase().contains(MyNotification.FACEBOOK_PKG)) || (pkgName.toLowerCase().contains(MyNotification.FBMSG_PKG))) {
+					facebCount = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.TWITTER_PKG)) {
+					twitterCount = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.WHATSAPP_PKG)) {
+					whatAppCount = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.MM_PKG)) {
+					weixiCount = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.LINE_PKG)) {
+					lineCount = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.SKYPE_PKG)) {
+					skype1Count = 0; /* setSendIndex(11); */
+				} else if ((pkgName.toLowerCase().contains(MyNotification.SKYPE_PKG2)) || (pkgName.toLowerCase().contains(MyNotification.SKYPE_PKG3))) {
+					skype2Count = 0; /* setSendIndex(11); */
+				} else if (pkgName.toLowerCase().contains(MyNotification.INSTAGRAM_PKG)) {
+					instCount = 0; /* setSendIndex(11); */
+				}
+
+				if (sendOrderIndex < -1)
+					return;
+
+				Log.d("new-test3", "add noti:  :" + pkgName + ":sendindex :" + sendOrderIndex);
+				/*
+				 * sendOrderType =3; refreshMsgCount(); if
+				 * (BluetoothUtils.isConnect) {
+				 *
+				 * new SendDataThread().start();
+				 *
+				 * } else { connectBluetooth(); }
+				 */
+
+				Log.d("new-test3", "remove noti: " + pkgName);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main" >
+    
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical" >
+
+    <!-- topbar 标题显示 -->
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title" />
+
+		<ImageButton
+			android:id="@+id/goal_btn_left"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_marginLeft="15dip"
+			android:layout_marginTop="0dip"
+			android:background="@drawable/topbtn_rebutn_btn_selector"
+			android:onClick="btn_return_clicked"
+			android:visibility="visible" />
+
+
+       
+        <FrameLayout
+	        android:id="@+id/framelayout_top_right"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right|center_vertical"
+	        >
+	         <!-- 右边的按钮: 提醒编辑 -->
+
+	        <TextView
+	            android:id="@+id/btn_notes_edit"
+	            android:layout_width="85dp"
+	            android:layout_height="45dip"
+	            android:layout_gravity="right|center_vertical"
+	            android:layout_marginRight="5dip"
+	            android:layout_marginTop="0dip"
+	            android:gravity="center"
+	            android:text="@string/reminder_edit"
+				android:textStyle="bold"
+	            android:textColor="#ffffff"
+	            android:textSize="18sp"
+	            android:visibility="visible" />
+
+	        <!-- 右边的按钮:提醒编辑确定  -->
+	        <TextView
+	            android:id="@+id/btn_notes_edit_ok"
+	            android:layout_width="50dip"
+	            android:layout_height="45dip"
+	            android:layout_marginTop="0dip"
+	            android:layout_gravity="right|center_vertical"
+	            android:gravity="center"
+	            android:layout_marginRight="5dip"
+	            android:text="@string/reminder_done"
+				android:textStyle="bold"
+	            android:textColor="#ffffff"
+	            android:textSize="18sp"
+	            android:visibility="gone" />
+	    </FrameLayout>
+	    
+        <!-- 右边的按钮:  设置的4个时间点目标提交到手环按钮-->
+        <ImageButton
+            android:id="@+id/btn_steps_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/topbtn_add_matter_finish_selector"            
+            android:visibility="gone" />
+        
+    </FrameLayout>
+    
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_remind_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_remind_notes_selector"
+            android:button="@null"
+            android:checked="true"
+            android:tag="radiobutton_remind_notes" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_steps_remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_steps_remind_selector"
+            android:button="@null"
+            android:tag="radiobutton_steps_remind" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:id="@+id/linelayout_remind_notes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:paddingBottom="110dp"
+        android:orientation="vertical">
+
+	    <!-- 没有便签提示 -->
+
+	    <LinearLayout
+	        android:id="@+id/linelayout_no_remind_notes"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+			android:visibility="gone">
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dp"
+	            android:gravity="center_vertical"
+				android:layout_marginTop="30dp"
+				android:orientation="horizontal" >
+
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+	                android:background="@drawable/dot"/>
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+	                android:gravity="center"
+	                android:text="@string/remindertips1"
+					android:textStyle="bold"
+	                android:textColor="@android:color/white"
+	                android:textSize="14sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+				android:layout_height="30dp"
+				android:layout_marginTop="5dp"
+				android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+	                android:background="@drawable/dot" />
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+					android:layout_marginLeft="10dp"
+	                android:padding="0dp"
+	                android:text="@string/remindertips2"
+					android:textStyle="bold"
+	                android:textColor="@android:color/white"
+	                android:textSize="14sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+				android:layout_height="30dp"
+				android:gravity="center_vertical"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal" >
+
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+	                android:background="@drawable/dot" />
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+					android:layout_marginLeft="10dp"
+	                android:padding="0dp"
+	                android:text="@string/remindertips3"
+					android:textStyle="bold"
+	                android:textColor="@android:color/white"
+	                android:textSize="14sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+				android:layout_height="80dp"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal" >
+
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginTop="5dp"
+	                android:background="@drawable/dot" />
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_marginBottom="10dip"
+	                android:layout_marginLeft="10dip"
+					android:layout_marginTop="5dp"
+					android:layout_marginRight="20dp"
+	                android:padding="0dp"
+	                android:text="@string/remindertips4"
+					android:textStyle="bold"
+	                android:textColor="@android:color/white"
+	                android:textSize="14sp" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <!-- 提醒便签列表 -->
+
+		<cn.appscomm.pedometer.UI.SingleItemScrollView
+			android:id="@+id/id_scrollview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="none"
+			>
+
+			<LinearLayout
+				android:id="@+id/id_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+			</LinearLayout>
+
+		</cn.appscomm.pedometer.UI.SingleItemScrollView>
+
+		<TextView
+			android:id="@+id/line_remind"
+			android:layout_width="fill_parent"
+			android:layout_height="0.5dip"
+			android:layout_marginLeft="0dip"
+			android:layout_marginRight="0dip"
+			android:background="#cccccc"
+			android:visibility="gone" />
+
+	    
+	</LinearLayout>
+    
+    <!-- 跑步设置列表 -->
+    <LinearLayout
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linelayout_steps_remind"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="8dip"
+        	android:gravity="center"
+        	android:padding="8dp"
+            android:text=""
+            android:textColor="#12B8BA"
+            android:textSize="13sp" 
+            /> 
+            <!-- android:text="@string/steps_remind_hint" -->
+        
+        <!-- 第1个目标设置 -->
+        <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:gravity="center"
+	        > 
+	        <ToggleButton   
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"
+				android:textOn=""
+				android:textOff=""
+		        android:background="@drawable/toggle_selector"
+		        android:id="@+id/togglebutton_time1"
+		        /> 	       
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="50dip"
+	        	android:layout_marginTop="0dip"
+	            android:text="09:00"
+	            android:textColor="#12B8BA"
+	            android:textSize="15sp" 
+	            /> 
+	        <TextView 
+	            android:layout_width="60dip"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="40dip"
+	        	android:gravity="center"
+	        	android:textColor="#fff"
+	        	android:textSize="15sp"
+	            android:text="0"
+	            android:id="@+id/textview_steps1"
+	            android:background="#12B8BA"
+	            android:clickable="true"
+	            /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="5dip"
+	        	android:gravity="center"
+	        	android:textColor="#12B8BA"
+	        	android:textSize="15sp"
+	            android:text="@string/steps"
+	            />  
+	    </LinearLayout>          
+	    <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:background="@drawable/line"
+	        /> 
+	        
+	    <!-- 第2个目标设置 -->
+        <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"	        
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:gravity="center"
+	        > 
+	        <ToggleButton   
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"
+				android:textOn=""
+				android:textOff=""
+		        android:background="@drawable/toggle_selector"
+		        android:id="@+id/togglebutton_time2"
+		        /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="50dip"
+	        	android:layout_marginTop="0dip"
+	            android:text="12:00"
+	            android:textColor="#12B8BA"
+	            android:textSize="15sp" 
+	            /> 
+	        <TextView 
+	            android:layout_width="60dip"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="40dip"
+	        	android:gravity="center"
+	        	android:textColor="#fff"
+	        	android:textSize="15sp"
+	            android:text="0"
+	            android:id="@+id/textview_steps2"
+	            android:background="#12B8BA"
+	            android:clickable="true"
+	            /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="5dip"
+	        	android:gravity="center"
+	        	android:textColor="#12B8BA"
+	        	android:textSize="15sp"
+	            android:text="@string/steps"
+	            /> 
+	    </LinearLayout>  
+	    <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"	        
+	        android:background="@drawable/line"
+	        /> 
+	        
+	    <!-- 第3个目标设置 -->
+        <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:gravity="center"
+	        > 
+	        <ToggleButton   
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"
+				android:textOn=""
+				android:textOff=""
+		        android:background="@drawable/toggle_selector"
+		        android:id="@+id/togglebutton_time3"
+		        /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="50dip"
+	        	android:layout_marginTop="0dip"
+	            android:text="16:00"
+	            android:textColor="#12B8BA"
+	            android:textSize="15sp" 
+	            /> 
+	        <TextView 
+	            android:layout_width="60dip"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="40dip"
+	        	android:gravity="center"
+	        	android:textColor="#fff"
+	        	android:textSize="15sp"
+	            android:text="0"
+	            android:id="@+id/textview_steps3"
+	            android:background="#12B8BA"
+	            android:clickable="true"
+	            /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="5dip"
+	        	android:gravity="center"
+	        	android:textColor="#12B8BA"
+	        	android:textSize="15sp"
+	            android:text="@string/steps"
+	            /> 
+	    </LinearLayout>  
+	    <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:background="@drawable/line"
+	        /> 
+	        
+	    <!-- 第4个目标设置 -->
+        <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:gravity="center"
+	        > 
+	        <ToggleButton   
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"
+				android:textOn=""
+				android:textOff=""
+		        android:background="@drawable/toggle_selector"
+		        android:id="@+id/togglebutton_time4"
+		        /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="50dip"
+	        	android:layout_marginTop="0dip"
+	            android:text="20:00"
+	            android:textColor="#12B8BA"
+	            android:textSize="15sp" 
+	            /> 
+	        <TextView 
+	            android:layout_width="60dip"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="40dip"
+	        	android:gravity="center"
+	        	android:textColor="#fff"
+	        	android:textSize="15sp"
+	            android:text="0"
+	            android:id="@+id/textview_steps4"
+	            android:background="#12B8BA"
+	            android:clickable="true"
+	            /> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="0dip"
+	        	android:layout_marginLeft="5dip"
+	        	android:gravity="center"
+	        	android:textColor="#12B8BA"
+	        	android:textSize="15sp"
+	            android:text="@string/steps"
+	            /> 
+	        
+        </LinearLayout>   
+	    
+       <!-- 目标步数总计 --> 
+        <LinearLayout
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:gravity="center"
+	        > 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center"
+	            android:id="@+id/target_steps"
+	            android:textColor="#12B8BA"
+	            android:textSize="13sp" 
+	            android:text=""
+	            />
+	        <!-- android:text="@string/daily_target" -->
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="30dip"
+	        	android:layout_marginRight="30dip"
+	        	android:gravity="center"
+	            android:id="@+id/textview_target_steps"
+	            android:textColor="#12B8BA"
+	            android:textSize="28sp" 
+	            android:text="7000"
+	            />        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center"
+                android:id="@+id/target_steps11" 
+	           android:textColor="#12B8BA"
+	            android:textSize="13sp" 
+	            android:text="@string/steps" 
+	            />        
+    	</LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>
+
+	<Button
+		android:id="@+id/btn_addReminder"
+		android:layout_width="300dp"
+		android:layout_height="48dp"
+		android:layout_marginBottom="50dp"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:background="#930031"
+		android:paddingLeft="30dp"
+		android:text="@string/add_new_reminder"
+		android:textColor="@color/white"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+	<!--android:layout_alignParentBottom="true"
+	android:layout_marginBottom="150dp"-->
+</RelativeLayout>

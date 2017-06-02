@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        >
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical">
+
+            <!-- 右边的按钮: 返回1 -->
+
+            <ImageButton
+                android:id="@+id/btn_left1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="true"
+                android:onClick="btn_return1_clicked"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btn_left2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="false"
+                android:onClick="btn_return2_clicked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dp"
+                android:text="@string/reminder_save"
+                android:textColor="#fff"
+                android:textSize="22dip"
+                android:visibility="gone"
+                android:onClick="heart_reta_save"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Workouts"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/lv_workouts_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:visibility="visible">
+
+    </ListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,3368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settinglayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical">
+
+            <!-- 右边的按钮: 返回1 -->
+
+            <ImageButton
+                android:id="@+id/btn_left1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="true"
+                android:onClick="btn_return1_clicked"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btn_left2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="false"
+                android:onClick="btn_return2_clicked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dp"
+                android:text="@string/reminder_save"
+                android:textColor="#fff"
+                android:textSize="22dip"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/sv_DateForm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_date_dd"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/date_DD"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/imgdd"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_date_mm"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/date_MM"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/imgmm"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_date_yy"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/date_YY"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/imgyy"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--预设睡眠-->
+    <ScrollView
+        android:id="@+id/sv_sleepSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_sleep_sw"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_sleepsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/adseting_presetsleep_disable"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/btn_sleepsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/sw_btn2"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sleep_bedtime"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/adseting_presetsleep_bedtime"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_bedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_bedtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/img_bedTime"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/img_bedTime"
+                    android:paddingLeft="10dip"
+                    android:text="10:00"
+                    android:textColor="@color/green"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sleep_wakeuptime"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/adseting_presetsleep_awaketime"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_awkeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_awakeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView2"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/img_awkeTime"
+                    android:paddingLeft="10dip"
+                    android:text="12:00"
+                    android:textColor="@color/green"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 设置主页 -->
+
+    <ScrollView
+        android:id="@+id/sv_advanced"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_country"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="false"
+                android:onClick="layout_country_clicked"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/country"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/next" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_dateform"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="false"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/dateform"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_brightness"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:clickable="false"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_brightness1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dip"
+                    android:text="@string/adseting_brighness"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/tv_brightness1"
+                    android:layout_below="@+id/tv_brightness1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img_bri01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/briness_lf" />
+
+                    <ImageView
+                        android:id="@+id/img_bri02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/briness_me" />
+
+                    <ImageView
+                        android:id="@+id/img_bri03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/briness_re" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="false"
+                android:onClick="layout_timeformat_clicked"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/adseting_clocktype_item"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:src="@drawable/more" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_inactivity"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="false"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/inactivity_alert_item"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_pushset"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/push_callAndSms"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/img_noti_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/next" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+            <!--Uints-->
+            <RelativeLayout
+                android:id="@+id/layout_lengthunits"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:onClick="layout_lengthunits_clicked"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/lengthunits"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/imgv_unit"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="40dp"
+                    android:text="Miles &amp; Pound"
+                    android:textColor="@color/bg_green_color"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <!--auto_sync Settings-->
+            <RelativeLayout
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/auto_sync"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold"
+                    android:id="@+id/textView15" />
+
+                <CheckBox
+                    android:id="@+id/cb_auto_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/sw_btn2"
+                    android:button="@null"
+                    android:checked="false"
+                    android:layout_alignTop="@+id/textView15"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="28dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--Notifications-->
+            <RelativeLayout
+                android:id="@+id/layout_notification"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/Notifications"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+
+
+            <!--Preset Sleep-->
+            <RelativeLayout
+                android:id="@+id/layout_presetsleep"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="false"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/adseting_presetsleep_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--Time Format-->
+            <RelativeLayout
+                android:id="@+id/layout_timeformat"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/time_format"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+
+            <!--Reset-->
+            <RelativeLayout
+                android:id="@+id/layout_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/reset"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--About Us-->
+            <RelativeLayout
+                android:id="@+id/layout_about_app"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/about_app1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--APP Version-->
+            <RelativeLayout
+                android:id="@+id/layout_version"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/app_version"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="1.0(build10)"
+                    android:textColor="@color/gray4"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_weightunits"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:onClick="layout_weightunits_clicked"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/weightunits"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/next" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 时间格式内容 -->
+
+    <ScrollView
+        android:id="@+id/sv_inactivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/layout_inactivity_sw"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="130dp"
+                    android:paddingLeft="10dip"
+                    android:text="@string/inactivity_alert_introduce"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dip" />
+
+                <CheckBox
+                    android:id="@+id/cbx_inactivitysw"
+                    android:layout_width="56dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/sw_btn"
+                    android:button="@null" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_inactivity_interval"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/inactivity_alert_interval"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/img_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/img_interval"
+                    android:layout_marginRight="31dp"
+                    android:layout_toLeftOf="@+id/img_interval"
+                    android:paddingLeft="10dip"
+                    android:text="30min"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/intervalSpn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_inactivity_start"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/inactivity_alert_start"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/img_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/img_starttime"
+                    android:layout_marginRight="31dp"
+                    android:layout_toLeftOf="@+id/img_starttime"
+                    android:paddingLeft="10dip"
+                    android:text="10:00"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_inactivity_end"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/inactivity_alert_end"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/img_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/img_end"
+                    android:layout_alignBottom="@id/img_end"
+                    android:layout_marginRight="29dp"
+                    android:layout_toLeftOf="@id/img_end"
+                    android:paddingLeft="10dip"
+                    android:text="12:00"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="@string/repeat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/layout_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time1"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_mon"
+                        android:textOn="@string/reminder_mon"
+                        android:textSize="10dip" />
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time2"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:layout_marginLeft="@dimen/layout_x_5"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_tues"
+                        android:textOn="@string/reminder_tues"
+                        android:textSize="10dip" />
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time3"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:layout_marginLeft="@dimen/layout_x_5"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_wed"
+                        android:textOn="@string/reminder_wed"
+                        android:textSize="10dip" />
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time4"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:layout_marginLeft="@dimen/layout_x_5"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_thu"
+                        android:textOn="@string/reminder_thu"
+                        android:textSize="10dip" />
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time5"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:layout_marginLeft="@dimen/layout_x_5"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_fri"
+                        android:textOn="@string/reminder_fri"
+                        android:textSize="10dip" />
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time6"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:layout_marginLeft="@dimen/layout_x_5"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_sat"
+                        android:textOn="@string/reminder_sat"
+                        android:textSize="10dip" />
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton_time7"
+                        android:layout_width="@dimen/layout_x_60"
+                        android:layout_height="@dimen/layout_x_60"
+                        android:layout_marginLeft="@dimen/layout_x_5"
+                        android:background="@drawable/toggle_week_selector"
+                        android:textColor="#fff"
+                        android:textOff="@string/reminder_sun"
+                        android:textOn="@string/reminder_sun"
+                        android:textSize="10dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scroll_pushView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/IncomingCall"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ToggleButton
+                    android:id="@+id/togCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/toggle_selector"
+                    android:text="ToggleButton"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/IncomingSMS"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ToggleButton
+                    android:id="@+id/togSMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/toggle_selector"
+                    android:text="ToggleButton"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_timeformat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour24_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_12" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView05"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour12_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_24_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_24_date"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_24_date" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView06"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour24_time_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_12_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_12_date"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_12_date" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView03"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour12_time_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_24_date_battery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_24_date_battery"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView09"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_24_date_battery" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView09"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour24_date_battery"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_12_date_battery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_12_date_battery"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView10"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_12_date_battery" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView10"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour12_date_battery"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_24_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_24_vertical"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView08"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_24_vertical" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView08"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour24_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_timeformat_12_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_timeformat_12_vertical"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ImageView109"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_12_vertical" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ImageView109"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour12_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 长度单位内容 -->
+
+    <ScrollView
+        android:id="@+id/sv_lengthunits"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_unitmiles"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:onClick="layout_unitmile_clicked">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/pound_miles"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_lengthunits2"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device2"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_unitkm"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:onClick="layout_unitkm_clicked">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/cent_kilometers"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_lengthunits1"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device2"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 体重单位内容 -->
+
+    <ScrollView
+        android:id="@+id/sv_weightunits"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_weightunits1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:onClick="layout_weightunits1_clicked">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/kilograms"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/iv_weightunits1"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_weightunits2"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true"
+                android:onClick="layout_weightunits2_clicked">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/pounds"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip" />
+
+                <ImageView
+                    android:id="@+id/iv_weightunits2"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--summer-->
+    <!--L28T 12 24-->
+    <ScrollView
+        android:id="@+id/sv_time_format"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/layout_time_format_12"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_time_format_12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour12_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_time_format_24"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_time_format_24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hour24_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--W01 DATE WEEK BATTERY-->
+    <ScrollView
+        android:id="@+id/sv_date_format"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_date_format_date"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_date_format_date"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="DATE"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_date_format_dateBat"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_date_format_dateBat"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="DATE+BATTERY"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_date_format_dateWeek"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_date_format_dateWeek"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="DATE+WEEK"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_date_format_dateWeekBat"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_date_format_dateWeekBat"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dip"
+                    android:text="DATE+WEEK+BATTERY"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--L30D -->
+    <ScrollView
+        android:id="@+id/sv_display_format"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_display_format_timeWeek"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/time_week"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:text="DD-MM-YY"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_display_format_timeWeek"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_display_format_clock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/clock"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:text="MM-DD-YY"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_display_format_clock"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_display_format_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/num"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:text="WW-YY-MM-DD"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_display_format_num"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_display_format_timeDateWeek"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/timedateweek" />
+
+                <ImageView
+                    android:id="@+id/iv_display_format_timeDateWeek"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--L39 时间格式设置-->
+    <ScrollView
+        android:id="@+id/sv_l39_time_format"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--new1-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_time12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0001" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_time12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_time12"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--new2-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_time24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0002" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_time24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_time24"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--TIME+DATE\n12H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDate12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0003" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDate12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDate12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--TIME+DATE\n24H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDate24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0004" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDate24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDate24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE\n24-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <!--TIME+DATE+BATTERY\n12H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDateBat12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_4"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0005" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDateBat12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDateBat12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_4"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE+BATTERY\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--TIME+DATE+BATTERY\n24H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDateBat24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0006" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDateBat24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDateBat24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE+BATTERY\n24-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--TIME+DATE+BATTERY\nHEART RATE+NAME\n12H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDateBatHeartName12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_6"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0005" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDateBatHeartName12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDateBatHeartName12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_6"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE+BATTERY\nHEART RATE\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--TIME+DATE+BATTERY\nHEART RATE+NAME\n24H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_timeDateBatHeartName24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_5"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0006" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeDateBatHeartName24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_timeDateBatHeartName24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_5"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE+BATTERY\nHEART RATE\n24-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--new3-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_vertival_time12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0007" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_vertival_time12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_vertival_time12"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--new4-->
+            <RelativeLayout
+                android:id="@+id/layout_l38i_vertival_time24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l38i_timeformat_2_new_4"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0008" />
+
+                <ImageView
+                    android:id="@+id/iv_l38i_vertival_time24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l38i_vertival_time24"
+                    android:layout_toRightOf="@id/iv_l38i_timeformat_2_new_4"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TIME+DATE\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--VERTICAL\n12-H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_vertical12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_8"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0009" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_vertical12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_vertical12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_8"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="VERTICAL\nTIME\n12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--VERTICAL\n24-H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_vertical24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_7"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0010" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_vertical24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_vertical24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_7"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="VERTICAL\nTIME\n24-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--VERTICAL\nTIME+DATE\n12-H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_verticalTimeDate12"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_10"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0011" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_verticalTimeDate12"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_verticalTimeDate12"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="VERTICAL\nTIME+DATE+BATTERY\nHEART RATE+12-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <!--VERTICAL\nTIME+DATE\n24-H-->
+            <RelativeLayout
+                android:id="@+id/layout_l39_verticalTimeDate24"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_l39_timeformat_9"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/time_0012" />
+
+                <ImageView
+                    android:id="@+id/iv_l39_verticalTimeDate24"
+                    android:layout_width="@dimen/layout_y_20"
+                    android:layout_height="@dimen/layout_y_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/select_device"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/iv_l39_verticalTimeDate24"
+                    android:layout_toRightOf="@id/iv_l39_timeformat_9"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="VERTICAL\nTIME+DATE+BATTERY\nHEART RATE+24-H"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#cccccc"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--心率设置-->
+    <ScrollView
+        android:id="@+id/sv_heartrateSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/auto_track"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/btn_auto_heartrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/sw_btn"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_frequency"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/frequency"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:text="15 min"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/hr_alert"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/btn_heartrate_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/sw_btn"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_low_limit"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/low_limit"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_low_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:text="40 bpm"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_high_limit"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/high_limit"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_high_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:text="180 bpm"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+    <!--Reset-->
+    <RelativeLayout
+        android:id="@+id/rl_reset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="40dp"
+            android:background="@drawable/login_ok"
+            android:onClick="onResetClick" />
+
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tv_hint"
+            android:layout_marginBottom="-40dp"
+            android:src="@drawable/img_light_l39" />
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="You will lose all your current progress \n and the device will reset to its factory \n settings. \n \n Are you sure you want to reset?"
+            android:layout_marginBottom="50dp"
+            android:layout_alignBottom="@+id/btn_ok"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

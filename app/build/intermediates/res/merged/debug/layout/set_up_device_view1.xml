@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    >
+
+
+        <FrameLayout
+            android:id="@+id/pttopbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/title" />
+
+            <!-- 左边的按钮   android:onClick="btn_left_clicked" -->
+
+            <ImageButton
+                android:id="@+id/btn_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:onClick="btn_return_clicked"
+                android:visibility="visible" />
+        </FrameLayout>
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/pttopbar"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_setup_new"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/tv_bind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/binddevice"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                     />
+
+                <ImageView
+                    android:id="@+id/goal_bar_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_remove"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/terms_service_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/binding_unpair"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                     />
+
+                <ImageView
+                    android:id="@+id/goal_bar_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/layout_debug"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical" >
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more"
+                    android:id="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/zefit_version_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/debuginfo"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dip"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+                <Button
+                    android:id="@+id/btn_unbind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onUnpairClick"
+                    android:text="Unpair(test)"
+                    android:background="@color/red_bg"/>
+                <EditText
+                    android:id="@+id/et_sn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/btn_unbind"
+                    android:hint="watchID"/>
+            </RelativeLayout>
+
+
+
+
+
+
+            <!-- 设备ID显示 -->
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_changeID"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:gravity="center_vertical" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="ReWrite WatchID"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"
+                    />
+
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/more" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <ScrollView
+
+        android:id="@+id/sv_idinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pttopbar"
+        android:visibility="gone"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_imi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/IMEI"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_imi_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_imi"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="fcl000213"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cccccc" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_update"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_firmware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/help_firmware_version"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dip"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_fireware_ver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_firmware"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="2.0"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/check_for_update"
+                    android:textColor="@color/darkGray"
+                    android:drawableRight="@drawable/more"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:clickable="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:background="#cccccc" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:background="#cccccc"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

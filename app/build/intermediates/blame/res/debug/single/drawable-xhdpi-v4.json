@@ -1,0 +1,278 @@
+[
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_0_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_0_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_user_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_user_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_1_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_1_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_down_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_arrow_down_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_3_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_3_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_2_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_2_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_1_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_1_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\thumb_check_select.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\thumb_check_select.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_feature_small_bg.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_feature_small_bg.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\heart_hr_off.jpg",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\heart_hr_off.jpg"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_tag_pin.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_tag_pin.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_rssi_bar.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_rssi_bar.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_feature_small_bg_p.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_feature_small_bg_p.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_1_full.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_1_full.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\drawable-xhdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_quick_signin_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_quick_signin_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_0_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_0_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_feature_bg.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_feature_bg.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\seek_bkg.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\seek_bkg.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\seekbar_horizontal.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\seekbar_horizontal.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\drawable-xhdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_report_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_report_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_cross_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_cross_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sw_btn1.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_btn1.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_3_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_3_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\edit_frame_color.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\edit_frame_color.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_right_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_arrow_right_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_right_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_arrow_right_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_tips_tag_1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_tips_tag_1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_logo.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_logo.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_left_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_arrow_left_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sw_btn.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_btn.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_cross_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_cross_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_exchange_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_exchange_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_2_full.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_2_full.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_quick_signin_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_quick_signin_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_tips_tag_2.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_tips_tag_2.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_feature_small_bg_n.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_feature_small_bg_n.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_left_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_arrow_left_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_feature_bg_p.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_feature_bg_p.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\3Plus_NewUI\\pullToRefreshlibrary\\unspecified\\res\\drawable-xhdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_user_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_user_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\background_image.jpg",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\background_image.jpg"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_tick_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_tick_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_3_full.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_3_full.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_tips_tag_3.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_tips_tag_3.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\seekbar_style.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\seekbar_style.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_feature_bg_n.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_feature_bg_n.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_issue_type_bug.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_issue_type_bug.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_password.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_password.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mcp_feature_small.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_mcp_feature_small.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_tick_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_tick_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_0_full.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_0_full.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_exchange_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_exchange_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_account.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_account.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_invoker_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_invoker_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_captcha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_captcha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_bg_tag_right.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_bg_tag_right.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_down_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_arrow_down_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_invoker_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_invoker_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_priority_2_selected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_priority_2_selected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_checkmark.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_checkmark.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\seek_bkg_prograss.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\seek_bkg_prograss.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_bg_tag_left.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_bg_tag_left.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\heart_hr_on.jpg",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\heart_hr_on.jpg"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_report_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_report_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btg_icon_issue_type_improve.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.bugtags.library\\bugtags-lib\\2.3.0\\res\\drawable-xhdpi-v4\\btg_icon_issue_type_improve.png"
+    }
+]

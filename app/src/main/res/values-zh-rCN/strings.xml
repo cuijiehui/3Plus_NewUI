@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="km">公里</string>
+    <string name="minutes">分钟</string>
+
+    <string name="kcal">卡路里</string>
+    <string name="open_bluetooth_device">请打开手机蓝牙</string>
+    <string name="sleeps_hint_text">SLEEP TIME</string>
+    <string name="sleeps_hint_hours">h</string>
+    <string name="sleeps_hint_mins">m</string>
+    <string name="goal">目标:&#160;</string>
+    <string name="range">心率范围</string>
+    <string name="awake_time">Awake for</string>
+    <string name="sleep_time">Fell Asleep in</string>
+    <string name="awake_times">AWAKE</string>
+    <string name="total_bed_time">Total sleep</string>
+    <string name="times">times</string>
+    <string name="sleep_time_err">Sleep time less than 10 minutes!</string>
+    <string name="bar_title_steps">步数</string>
+    <string name="bar_title_distance">距离 </string>
+    <string name="bar_title_calories">卡路里</string>
+    <string name="bar_title_sleep">睡觉</string>
+    <string name="bar_goal">目标</string>
+    <string name="today">TODAY</string>
+    <string name="today1">today</string>
+    <string name="week">周</string>
+    <string name="months">月</string>
+    <string name="top_day">天</string>
+    <string name="top_week">Week</string>
+    <string name="top_month">Month</string>
+    <string name="LastSynced">Last synced</string>
+    <string name="Yesterday">yesterday</string>
+    <string name="Battery">Battery</string>
+    <string name="goals_title">目标</string>
+    <string name="my_daily_goals">MY DAILY GOALS</string>
+    <string name="my_daily_steps">步数</string>
+    <string name="my_daily_distance">距离</string>
+    <string name="my_daily_active_minutes">运动时间（分钟）</string>
+    <string name="my_daily_calories">卡路里</string>
+    <string name="my_daily_sleep">睡眠时间（小时）</string>
+    <string name="daily_goal">DAILY GOAL</string>
+    <string name="reminds_title">提醒</string>
+    <string name="steps">步</string>
+    <string name="steps1">步数</string>
+    <string name="remind_time">提醒时间</string>
+    <string name="repeat">自定义重复</string>
+    <string name="sport">运动</string>
+    <string name="sleep">睡眠</string>
+    <string name="eat">用餐</string>
+    <string name="medicine">吃药</string>
+    <string name="note_type_no">请选择提醒类型</string>
+    <string name="select_day_no">Select the day you want the reminder to repeat</string>
+    <string name="notes_max_20">不能超过10条提醒</string>
+    <string name="every_day">每天</string>
+    <string name="sunday">日</string>
+    <string name="saturday">六</string>
+    <string name="friday">五</string>
+    <string name="thursday">四</string>
+    <string name="wednesday">三</string>
+    <string name="tuesday">二</string>
+    <string name="monday">一</string>
+    <string name="add_new_reminder">添加提醒</string>
+    <string name="wake_up">闹钟</string>
+    <string name="add_note">提醒内容</string>
+    <string name="reminder_mon">一</string>
+    <string name="reminder_tues">二</string>
+    <string name="reminder_wed">三</string>
+    <string name="reminder_thu">四</string>
+    <string name="reminder_fri">五</string>
+    <string name="reminder_sat">六</string>
+    <string name="reminder_sun">日</string>
+    <string name="reminder_save">保存</string>
+    <string name="reminder_edit">编辑</string>
+    <string name="reminder_am">am</string>
+    <string name="reminder_pm">pm</string>
+    <string name="reminder_m">一</string>
+    <string name="reminder_tu">二</string>
+    <string name="reminder_w">三</string>
+    <string name="reminder_th">四</string>
+    <string name="reminder_f">五</string>
+    <string name="reminder_sa">六</string>
+    <string name="reminder_su">日</string>
+    <string name="edit">编辑</string>
+    <string name="reminder_done">保存</string>
+    <string name="settings_title">设置</string>
+    <string name="setting_lang">语言</string>
+    <string name="base_setting">MY PROFILE</string>
+    <string name="base_setting1">个人设置</string>
+    <string name="notification">通知</string>
+    <string name="notification1">通知</string>
+    <string name="advanced_setting">ADVANCED SETTINGS</string>
+    <string name="advanced_setting1">设置</string>
+    <string name="help">HELP</string>
+    <string name="help1">Help</string>
+    <string name="set_up_device">CONNECT L28H</string>
+    <string name="sleep_goal">Goal</string>
+    <string name="about_app">关于我们</string>
+    <string name="about_app1">关于我们</string>
+    <string name="logout">退出</string>
+    <string name="OK">确定</string>
+    <string name="sex">性别</string>
+    <string name="date_of_birth">生日</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="done">完成</string>
+    <string name="gender">性别</string>
+    <string name="terms_service">Terms of service</string>
+    <string name="zefit_version">L28H App Version</string>
+    <string name="copyright">  Copyright,Kronoz LLC\n  All Rights Reserved</string>
+    <string name="time_hour">hours</string>
+    <string name="pedometer">3PLUS</string>
+    <string name="remove">Deregister device</string>
+    <string name="debuginfo">设备信息</string>
+
+    <string name="remove_hint">解除绑定？</string>
+    <string name="turn_on_bluetooth_content">请打开手机蓝牙</string>
+    <string name="next">NEXT</string>
+    <string name="device_searching">配对</string>
+    <string name="binddevice">绑定设备</string>
+    <string name="about_app_title">关于我们</string>
+    <string name="login_introduce">3PLUS IS AN ULTRA-THIN ALUMINUM CONNECTED WATCH WITH TOUCHSCREEN THAT TRACKS YOUR DAILY ACTIVITY AND SLEEP QUALITY. \n3PLUS SHOWS NOTIFICATIONS OF CALLS, SMS, EMAILS, CALENDAR EVENTS AND SOCIAL MEDIA ACTIVITY.</string>
+    <string name="btn_reg">新用户注册</string>
+    <string name="sign_up">新用户注册</string>
+    <string name="btn_login">用户登录</string>
+    <string name="reg_username">用户名</string>
+    <string name="reg_name">姓名</string>
+    <string name="reg_email">  邮箱</string>
+    <string name="reg_password">  密码（至少6个字符）</string>
+    <string name="reg_male">男</string>
+    <string name="reg_female">女</string>
+    <string name="reg_height">身高</string>
+    <string name="reg_weight">体重</string>
+    <string name="reg_birthday">生日</string>
+    <string name="reg_country">国家</string>
+    <!--<string name="reg_protocol"> <a href="http://3plususa.com/terms-and-conditions/">Terms of Service</a>  and  <a href="http://3plususa.com/privacy-policy/"> Privacy  Policy</a>   </string>-->
+    <string name="reg_protocol"> Terms of Service  </string>
+    <string name="reg_protocol1">  Privacy  Policy   </string>
+    <string name="reg_username_null">用户名不能为空</string>
+    <string name="reg_email_null">邮箱不能为空</string>
+    <string name="reg_password_null">密码不能为空</string>
+    <string name="reg_gender_null">请选择性别</string>
+    <string name="reg_height_null">身高不能为空</string>
+    <string name="reg_weight_null">体重不能为空</string>
+    <string name="reg_birthday_null">生日不能为空</string>
+    <string name="reg_email_wrong">邮箱格式错误</string>
+    <string name="login_loading">加载中</string>
+    <string name="login_username_wrong">用户名或密码错误</string>
+    <string name="login_forgot_password">忘记密码</string>
+    <string name="not_support_password">Does not support password</string>
+    <string name="password_length">请输入6至16位密码</string>
+    <string name="read_protocol">Please read and confirm the user protocol</string>
+    <string name="email_exist">邮箱已被注册</string>
+
+
+    <string name="nickname_exist">姓名已被使用</string>
+    <string name="reset_password">RESET MY PASSWORD</string>
+    <string name="about_app_content">about .</string>
+    <string name="changepassword">修改密码</string>
+    <string name="oldpassword">旧密码</string>
+    <string name="newpassword">新密码</string>
+    <string name="curpwd">旧密码</string>
+    <string name="newpwd">新密码</string>
+    <string name="inputoldpassword">当前密码不能为空</string>
+    <string name="inputnewpassword">新密码不能为空</string>
+    <string name="inputrepeatedpassword">请再输入新密码</string>
+    <string name="mustselectcountry">Must select a country</string>
+    <string name="oldincorrect">旧密码错误</string>
+    <string name="notconformity">两次输入的新密码不一致</string>
+    <string name="revisedsuccessfully">修改成功</string>
+    <string name="country">Country</string>
+
+    <string name="dateform">TIME FORM</string>
+
+    <string name="timeformat">CLOCK TYPE</string>
+    <string name="lengthunits">单位</string>
+    <string name="weightunits">Weight Units</string>
+    <string name="hour12">12-Hour</string>
+    <string name="hour24">24-Hour</string>
+    <string name="cent_kilometers">公斤，公里</string>
+    <string name="pound_miles">磅，英里</string>
+
+    <string name="feetmiles">英里</string>
+    <string name="kilograms">公里</string>
+    <string name="miles">英里</string>
+    <string name="minute">分钟</string>
+    <string name="h">时</string>
+    <string name="m">分</string>
+    <string name="pounds">磅</string>
+    <string name="success">成功</string>
+    <string name="save">保存成功</string>
+    <string name="tips">提示</string>
+    <!-- country begin -->
+    <string name="Algeria">Algeria</string>
+    <string name="Andorra">Andorra</string>
+    <string name="Argentina">Argentina</string>
+    <string name="Armenia">Armenia</string>
+    <string name="Australia">Australia</string>
+    <string name="Austria">Austria</string>
+    <string name="Azerbaijan">Azerbaijan</string>
+    <string name="Bahamas">Bahamas</string>
+    <string name="Bahrain">Bahrain</string>
+    <string name="Belgium">Belgium</string>
+    <string name="Belarus">Belarus</string>
+    <string name="Brazil">Brazil</string>
+    <string name="Bulgaria">Bulgaria</string>
+    <string name="Cambodia">Cambodia</string>
+    <string name="Canada">Canada</string>
+    <string name="Chile">Chile</string>
+    <string name="China">China</string>
+    <string name="Colombia">Colombia</string>
+    <string name="Costa_Rica">Costa Rica</string>
+    <string name="Croatia">Croatia</string>
+    <string name="Cyprus">Cyprus</string>
+    <string name="Czech_Republic">Czech Republic</string>
+    <string name="Denmark">Denmark</string>
+    <string name="Deutschland">Deutschland</string>
+    <string name="Dominican_Republic">Dominican Republic</string>
+    <string name="Ecuador">Ecuador</string>
+    <string name="Egypt">Egypt</string>
+    <string name="El_Salvador">El Salvador</string>
+    <string name="Estonia">Estonia</string>
+    <string name="Finland">Finland</string>
+    <string name="France">France</string>
+    <string name="Greece">Greece</string>
+    <string name="Guatemala">Guatemala</string>
+    <string name="Honduras">Honduras</string>
+    <string name="Hong_Kong">Hong Kong</string>
+    <string name="Hungary">Hungary</string>
+    <string name="Iceland">Iceland</string>
+    <string name="India">India</string>
+    <string name="Indonesia">Indonesia</string>
+    <string name="Iran">Iran</string>
+    <string name="Ireland">Ireland</string>
+    <string name="Israel">Israel</string>
+    <string name="Italy">Italy</string>
+    <string name="Jamaica">Jamaica</string>
+    <string name="Japan">Japan</string>
+    <string name="Jordan">Jordan</string>
+    <string name="Kazakhstan">Kazakhstan</string>
+    <string name="Kenya">Kenya</string>
+    <string name="Kuwait">Kuwait</string>
+    <string name="Kyrgyzstan">Kyrgyzstan</string>
+    <string name="Latvia">Latvia</string>
+    <string name="Lebanon">Lebanon</string>
+    <string name="Liechtenstein">Liechtenstein</string>
+    <string name="Lithuania">Lithuania</string>
+    <string name="Luxembourg">Luxembourg</string>
+    <string name="Madagascar">Madagascar</string>
+    <string name="Malaysia">Malaysia</string>
+    <string name="Malta">Malta</string>
+    <string name="Mauritania">Mauritania</string>
+    <string name="Mauritius">Mauritius</string>
+    <string name="Mexico">Mexico</string>
+    <string name="Morocco">Morocco</string>
+    <string name="Netherlands">Netherlands</string>
+    <string name="New_Zealand">New Zealand</string>
+    <string name="Nicaragua">Nicaragua</string>
+    <string name="Niger">Niger</string>
+    <string name="Nigeria">Nigeria</string>
+    <string name="Norway">Norway</string>
+    <string name="Oman">Oman</string>
+    <string name="Panama">Panama</string>
+    <string name="Paraguay">Paraguay</string>
+    <string name="Peru">Peru</string>
+    <string name="Philippines">Philippines</string>
+    <string name="Poland">Poland</string>
+    <string name="Portugal">Portugal</string>
+    <string name="Qatar">Qatar</string>
+    <string name="Romania">Romania</string>
+    <string name="Russia">Russia</string>
+    <string name="Saudi_Arabia">Saudi Arabia</string>
+    <string name="Senegal">Senegal</string>
+    <string name="Serbia">Serbia</string>
+    <string name="Seychelles">Seychelles</string>
+    <string name="Sierra_Leone">Sierra Leone</string>
+    <string name="Singapore">Singapore</string>
+    <string name="Slovakia">Slovakia</string>
+    <string name="Slovenia">Slovenia</string>
+    <string name="South_Africa">South Africa</string>
+    <string name="South_Korea">South Korea</string>
+    <string name="Spain">Spain</string>
+    <string name="Sweden">Sweden</string>
+    <string name="Switzerland">Switzerland</string>
+    <string name="Syria">Syria</string>
+    <string name="Taiwan">Taiwan</string>
+    <string name="Thailand">Thailand</string>
+    <string name="Tunisia">Tunisia</string>
+    <string name="Turkey">Turkey</string>
+    <string name="Ukraine">Ukraine</string>
+    <string name="United_Arab_Emirates">United Arab Emirates</string>
+    <string name="United_Kingdom">United Kingdom</string>
+    <string name="United_States_of_America">United States of America</string>
+    <string name="Uruguay">Uruguay</string>
+    <string name="Venezuela">Venezuela</string>
+    <string name="Vietnam">Vietnam</string>
+    <string name="Puerto_Rico">Puerto Rico</string>
+    <!-- country end -->
+
+    <string name="s_public_open_gps_tip">因为你的手机系统是基于Android6.0以上，请在手机系统中启用位置功能后继续。</string>
+
+    <!-- begin -->
+    <string name="light_sleep">Light Sleep</string>
+    <string name="deep_sleep">Deep sleep</string>
+    <string name="remindertips1">你可以设置6种类型的每天提醒。</string>
+    <string name="remindertips2">选择提醒类型。</string>
+    <string name="remindertips3">选择时间和日期。</string>
+    <string name="remindertips4">一旦到提醒时间点,设备会轻轻颤动并显示相应的图标提醒你。</string>
+    <string name="frequently_asked_questions">Frequently asked questions</string>
+    <string name="sports_title">Activity</string>
+    <string name="ShortActivity">Activity</string>
+    <string name="app_name">3PLUS ELITE</string>
+    <string name="loading">连接中...</string>
+    <string name="server_not_respond">服务器未响应！</string>
+    <string name="searching">搜索中...</string>
+    <string name="loading_setting">The data set, please wait...</string>
+    <string name="no_found_device">没有发现蓝牙设备!</string>
+    <string name="program_exception">program exception</string>
+    <string name="kg">Kg</string>
+    <string name="lbs">lbs</string>
+    <string name="cm">厘米</string>
+    <string name="ft">尺 寸</string>
+    <string name="f">尺</string>
+    <string name="t">寸</string>
+    <string name="login_username_exist">用户名不存在，请重新输入!</string>
+    <string name="send_email_failed">邮箱发送失败，请重试!</string>
+    <string name="setting_success">成功</string>
+    <string name="setting_failed">失败!</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="note_time_same">时间不能重复!</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="os_hint_title">警告</string>
+    <string name="os_hint_content">Android4.3 and above，This system is：</string>
+    <string name="dist">Dist</string>
+    <string name="ener">Ener</string>
+    <string name="time">Time</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="today_steps1">You have reached </string>
+    <string name="today_steps2">of your daily goals</string>
+    <string name="get_sports_data_false">Obtain detailed data received failure movement, please try!</string>
+    <string name="get_sports_data_break_off">Obtain detailed data received motion interrupt,please re acquisition, to prevent data loss</string>
+    <string name="get_sports_data_finish">The movement has no new data with data!</string>
+    <string name="change_target">Change the target</string>
+    <!-- end -->
+    <string name="reset_zefit">RESET 3PLUS</string>
+    <string name="reset_hint">This operation will delete all your activity data and restore 3PLUS to its original settings. </string>
+    <string name="Cancel">取消</string>
+    <string name="update_firmware_zefit_available">A new version of 3PLUS is available!</string>
+    <string name="update_firmware_title">To update 3PLUS software, please follow these steps:\n </string>
+    <string name="update_firmware_followstep">Follow these steps: </string>
+    <string name="update_firmware_visit">Visit </string>
+    <string name="update_firmware_website">http://appscomm.com/softwareAppDownload</string>
+    <string name="update_firmware_hint1">Download and install 3PLUS software on your computer\n</string>
+    <string name="update_firmware_hint2">Plug 3PLUS into a powered USB port\n</string>
+    <string name="update_firmware_hint3">Updating 3PLUS can take 5 to 10 minutes</string>
+    <string name="update_firmware_hint4"></string>
+    <string name="Download_now">Download now</string>
+
+    <string name="app_version">APP 版本</string>
+    <string name="make_sure_zefit">请确保设备在附近 </string>
+    <string name="again">请重试</string>
+    <string name="connect">连接中...</string>
+    <string name="syndata">同步中...</string>
+    <string name="lightuUp"> 请点亮设备屏幕</string>
+    <string name="NetWorkError">网络不可用，请重试!</string>
+    <string name="ZefitAlreadyBind"> Your 3PLUS has already been paired with another email address. For privacy and security reasons, please contact service@3plususa.com and send
+        us a screenshot including the D/N number indicated below. Our team will assist you to proceed further with your pairing process.\n\nD/N:</string>
+
+    <string name="error_device_not_connect">设备没连接.</string>
+
+    <string name="contactsupport">Contact support</string>
+    <string name="NotAllowSameTypeBind"> Not Allow binding  SameType Watch!!</string>
+    <string name="ServerBusy">服务器繁忙，请重试！</string>
+    <string name="synPedometer">同步到3PLUS？</string>
+    <string name="push_callAndSms">通知</string>
+    <string name="IncomingCall">来电</string>
+    <string name="IncomingSMS">信息</string>
+    <string name="push_callAndSms2">通知</string>
+    <string name="upload_sportdata_fail">Upload SportData Fail!,Data will be automatically uploaded when  network is stable</string>
+    <string name="upload_Sleepdata_fail">Upload SleepData Fail!</string>
+    <string name="download_sportdata_fail">Download SportData Fail!</string>
+    <string name="download_sleepdata_fail">Download SleepData Fail!</string>
+    <string name="download_clouddata_fail">Download CloudData Fail, Please Retry!</string>
+    <string name="download_it_now">现在就下载？</string>
+    <string name="upgrade">下载</string>
+
+    <string name="need_upload_data">Exit Now?</string>
+
+    <string name="ANTI_LOST">防丢失</string>
+    <string name="Share">Share</string>
+    <string name="noti_call"> 来电</string>
+    <string name="Notifications">通知</string>
+
+    <string name="NOTIFICATIONS">通知</string>
+    <string name="camera">CAMERA</string>
+
+    <string name="album">ALBUM</string>
+
+    <string name="binding_introduce">请点亮设备屏幕</string>
+    <string name="binding_select_devices">请选择正确的设备</string>
+    <string name="binding_select_accessory">Select An Accessory</string>
+    <string name="binding_connotsee">CANNOT SEE IT</string>
+    <string name="binding_pairrequest">YOU WILL RECEIVE A  PAIRING REQUEST</string>
+    <string name="binding_acceptpair">请点击设备屏幕上的 \'√\'</string>
+    <string name="SetUpFailed">配对失败! 请重试</string>
+    <string name="SuccessfulSetUp">配对成功</string>
+    <string name="binding_startnow">START NOW</string>
+    <string name="binding_unpair">解除绑定</string>
+    <string name="sleep_start_item">START SLEEP NOW</string>
+    <string name="sleep_add_item">ADD SLEEP</string>
+    <string name="sleep_add_title">Add sleep</string>
+    <string name="sleep_add_awaketime">清醒时间</string>
+    <string name="sleep_add_bedtime">入睡时间</string>
+    <string name="sleep_title">Sleep</string>
+    <string name="sleep_log">Sleep log</string>
+    <string name="sleep_data">Sleep data</string>
+    <string name="sleep_report">Sleep report</string>
+    <string name="notice_item">通知</string>
+    <string name="notice_title">通知</string>
+    <string name="notice_sms">信息</string>
+    <string name="notice_email">邮件</string>
+    <string name="notice_social">社交</string>
+    <string name="notice_event">日历事件</string>
+    <string name="notice_anti_lost">防丢失</string>
+    <string name="notice_calls">来电</string>
+    <string name="notice_missed_calls">未接来电</string>
+    <string name="notice_alls">所有通知</string>
+    <string name="notice_enable">打开通知</string>
+    <string name="remainds_type">提醒类型</string>
+    <string name="remainds_meeting">自定义</string>
+    <string name="setting_my_zecircle">My 3PLUS</string>
+    <string name="setting_connet_zecircle">CONNECT 3PLUS</string>
+    <string name="setting_reset_zecircle">RESET 3PLUS</string>
+    <string name="setting_alwayon_sync">Always-on sync</string>
+    <string name="repeatedpassword">Repeat New Password</string>
+    <string name="confirmpassword">重复新密码</string>
+    <string name="adseting_brighness">BRIGHTNESS</string>
+    <string name="adseting_clocktype_item">CLOCK TYPE</string>
+    <string name="adseting_clocktype_title">Clock type</string>
+    <string name="adseting_dateformat_item">DATE FORMAT</string>
+    <string name="adseting_dateformat_title">Date Format</string>
+    <string name="inactivity_alert_item">INACTIVITY ALERT</string>
+    <string name="adseting_presetsleep_item">PRESET SLEEP</string>
+    <string name="adseting_presetsleep_title">睡眠预设</string>
+    <string name="adseting_presetsleep_bedtime">睡眠时间</string>
+    <string name="adseting_presetsleep_awaketime">清醒时间</string>
+    <string name="adseting_advanced_Settings">高级设置</string>
+    <string name="inactivity_alert_title">Inactivity Alert</string>
+    <string name="inactivity_alert_introduce">3PLUS will vibrate and alert you if you stay inactive</string>
+    <string name="inactivity_alert_interval">interval</string>
+    <string name="inactivity_alert_start">Start</string>
+    <string name="inactivity_alert_end">End</string>
+    <string name="help_app_version">3PLUS App Version</string>
+    <string name="contact_support">Contact customer support</string>
+    <string name="help_firmware_version">软件版本:</string>
+    <string name="firmware_version">硬件版本:</string>
+    <string name="IMEI">IMEI:</string>
+    <string name="check_for_update">检测更新</string>
+    <string name="checking">Checking...</string>
+    <string name="update_hint">存在最新版本</string>
+    <string name="update_hint1">，是否下载</string>
+    <string name="updateing">下载中!</string>
+    <string name="share_message">Message</string>
+    <string name="share_email">Email</string>
+    <string name="share_twitter">Twitter</string>
+    <string name="share_facebook">Facebook</string>
+    <string name="share_saveimage">Save image</string>
+    <string name="share_copy">Copy</string>
+    <string name="share_print">Print</string>
+    <string name="share_contact">Assign to Contact</string>
+    <string name="share_location">Location</string>
+    <string name="share_audience">Audience</string>
+    <string name="leaderboard_item">Leaderboard</string>
+    <string name="leaderboard_weekly">Weekly steps challenge</string>
+    <string name="leaderboard_dayleft">1/2/3/4/5/6 day left</string>
+    <string name="leaderboard_addfriends">添加朋友</string>
+    <string name="leaderboard_thisweek">This week</string>
+    <string name="leaderboard_search">Search for friend by name or email</string>
+    <string name="login_check">Are you really sure you want to use xxx@xxx.com to pair this device?</string>
+    <string name="hour24_date">24-H</string>
+    <string name="hour12_date">12-H</string>
+    <string name="vibration">震动</string>
+    <string name="weak">弱</string>
+    <string name="standard">标准</string>
+    <string name="strong">强</string>
+    <string name="hour24_time_date">TIME+DATE\n 24-H </string>
+    <string name="hour12_time_date">TIME+DATE\n 12-H</string>
+    <string name="hour24_date_battery">TIME+DATE+BATTERY\n 24-H </string>
+    <string name="hour12_date_battery">TIME+DATE+BATTERY\n 12-H</string>
+    <string name="hour12_vertical">VERTICAL\n12-H</string>
+    <string name="hour24_vertical">VERTICAL\n24-H </string>
+    <string name="hour24_vertical_date_battery">VERTICAL TIME+DATE+BATTERY\n 24-H </string>
+    <string name="date_DD">DD/MM/YY</string>
+    <string name="date_MM">MM/DD/YY</string>
+    <string name="date_YY">YY/DD/MM</string>
+    <string name="date_Day">天</string>
+    <string name="adseting_presetsleep_disable">自动进入睡眠模式</string>
+    <string name="adseting_presetsleep_enable">Enable auto sleep</string>
+    <string name="bedtime">BED TIME:</string>
+    <string name="wake_up_time">WAKE UP TIME:</string>
+    <string name="qa_website">http://www.google.com</string>
+    <string name="DeterminedToExit">退出当前账号？</string>
+    <string name="ExitApp">\n退出程序 ？\n</string>
+    <string name="needfacebook">you must install facebook app first. </string>
+    <string name="needtwitter">you must install twitter app first. </string>
+    <string name="needprinter">No Printer detected. </string>
+    <string name="autosleep_time_less10">The time interval must be greater than 10 minutes!</string>
+    <string name="battery_warning">WARNING! Turning on this feature will have a noticeable impact on the battery. Would you like to continue?</string>
+       <string name="FirmwareUpgradeRequired">Firmware upgrade required
+To continue using your 3PLUS, you must upgrade the current version of its firmware</string>
+    <string name="Unit_US">英制</string>
+    <string name="Unit_Metric">公制</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="AutoSleepMode">AUTOMATIC SLEEP MODE</string>
+    <string name="SleepMode">睡眠模式</string>
+
+    <string name="height_tips">我们使用身高测量步伐的长度</string>
+    <string name="weight_tips">我们使用体重测量卡路里的燃烧</string>
+    <string name="bound_connnected">已连接</string>
+    <string name="bound_disconnnect">未连接</string>
+    <string name="bound_unbound">未绑定</string>
+
+    <string name="menu">菜单</string>
+    <string-array name="menuitems42">
+        <item> 配对 </item>
+        <item> 锻炼 </item>
+        <item> 提醒 </item>
+        <item> 查找好友 </item>
+        <item> 目标 </item>
+        <item> 设置 </item>
+        <item> 个人设置 </item>
+        <item> 反馈 </item>
+    </string-array>
+    <string-array name="menuitems">
+        <item> 配对 </item>
+        <item> 提醒 </item>
+        <item> 查找好友 </item>
+        <item> 目标 </item>
+        <item> 设置 </item>
+        <item> 个人设置 </item>
+        <item> 反馈 </item>
+    </string-array>
+    <string-array name="shortweek">
+        <item> 日</item>
+        <item> 一</item>
+        <item> 二</item>
+        <item> 三</item>
+        <item> 四</item>
+        <item> 五</item>
+        <item> 六</item>
+
+
+    </string-array>
+
+    <string name="title_activity_step_view">StepViewActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="TimeLine">时间线</string>
+
+
+    <string name="step_desc">步数</string>
+    <string name="calories_desc">卡路里</string>
+    <string name="distance_desc">公里</string>
+    <string name="activity_desc">运动时长</string>
+    <string name="sleep_desc">次 唤醒</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- summer -->
+    <string name="font_path">fonts/trebucbd.ttf</string>
+    <string name="normal_font_path">fonts/trebuc.ttf</string>
+
+    <string name="ok">确定</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="cancel">取消</string>
+
+    <string name="action_about">About</string>
+    <string name="action_connect">CONNECT</string>
+    <string name="action_select">SELECT DEVICE</string>
+    <string name="action_disconnect">DISCONNECT</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_plugins">PLUGINS</string>
+    <string name="drawer_plugin_mcp">nRF Master Control Panel</string>
+
+    <string name="battery">%d%%</string>
+    <string name="progress">%d%%</string>
+    <string name="not_available">n/a</string>
+    <string name="not_available_value">" - "</string>
+    <string name="no_ble">Device doesn\'t have BLE support!</string>
+    <string name="no_apps">No profiles found.</string>
+    <string name="not_supported">The device does not have required services.</string>
+    <string name="no_application">Web Browser application is not available.</string>
+    <string name="no_application_play">Google Play not installed.</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="scanner_empty">No device found</string>
+    <string name="scanner_action_scan">Scan</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_subtitle_bonded">BONDED DEVICES:</string>
+    <string name="scanner_subtitle__not_bonded">AVAILABLE DEVICES:</string>
+
+    <string name="bonding">Bonding with the device&#8230;</string>
+    <string name="bonded">The device is now bonded.</string>
+
+    <string name="log" formatted="false">%1$tR:%1$tS.%1$tL</string>
+
+    <string name="about_title">About</string>
+    <string name="about_version">\n\nVersion: %s</string>
+    <string name="about_text">The nRF Toolbox is a container application that stores your Nordic Semiconductor apps in one location.</string>
+
+
+    <string name="dfu_action_abort">Abort</string>
+
+    <string name="dfu_status_initializing">Initializing&#8230;</string>
+    <string name="dfu_status_connecting">Connecting&#8230;</string>
+    <string name="dfu_status_starting">Starting DFU&#8230;</string>
+    <string name="dfu_status_switching_to_dfu">Starting bootloader&#8230;</string>
+    <string name="dfu_status_uploading">Uploading&#8230;</string>
+    <string name="dfu_status_uploading_part" formatted="false">Uploading part %d/%d&#8230;</string>
+    <string name="dfu_status_validating">Validating&#8230;</string>
+    <string name="dfu_status_disconnecting">Disconnecting&#8230;</string>
+    <string name="dfu_status_completed">Done</string>
+    <string name="dfu_status_aborted">Aborted</string>
+    <string name="dfu_status_aborting">Aborting&#8230;</string>
+    <string name="dfu_status_error">Upload failed</string>
+
+    <string name="dfu_status_connecting_msg">Connecting to %s&#8230;</string>
+    <string name="dfu_status_starting_msg">Initializing DFU process&#8230;</string>
+    <string name="dfu_status_switching_to_dfu_msg">Waiting for bootloader&#8230;</string>
+    <string name="dfu_status_uploading_components_msg">Transmitting components to %s&#8230;</string>
+    <string name="dfu_status_uploading_msg">Transmitting application to %s&#8230;</string>
+    <string name="dfu_status_validating_msg">Validating&#8230;</string>
+    <string name="dfu_status_completed_msg">Application has been send successfully.</string>
+    <string name="dfu_status_aborted_msg">Application upload has been canceled.</string>
+    <string name="dfu_status_disconnecting_msg">Disconnecting from %s&#8230;</string>
+    <string name="dfu_status_error_msg">DFU process failed.</string>
+    <string name="title_activity_select_device">SelectDeviceActivity</string>
+
+
+    <!--<string name="l28h_item">3PLUS-L28H</string>
+    <string name="w01_item">3PLUS-W01L/S</string>
+    <string name="l30d_item">3PLUS-C01M</string>
+    <string name="l28t_item">3PLUS-L28T</string>-->
+
+    <string name="l39_item">3PLUS-HR</string>
+    <string name="l28h_item">3PLUS-SWIPE</string>
+    <string name="w01_item">3PLUS-TIME</string>
+    <string name="l30d_item">3PLUS-VIBE</string>
+    <string name="l28t_item">3PLUS-LITE</string>
+    <string name="l38i_item">3PLUS-THIN HR</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_find_friends">FindFriendsActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+
+    <!--绑定-->
+    <string name="pair_device">绑定设备</string>
+    <string name="setup_device">绑定设备</string>
+    <string name="select_device">请选择正确的设备</string>
+    <string name="confirm_l39">Please click on the device screen  \'√\'</string>
+    <string name="confirm_l30d">Click on the button to accept pairing</string>
+    <string name="confirm_w01">Tap on display to accept pairing</string>
+    <string name="confirm_l28t">Click on the button to accept pairing</string>
+
+    <!--设置-->
+    <string name="time_format">时间格式</string>
+    <string name="date_format">日期格式</string>
+    <string name="heart_rate_set">心率设置</string>
+    <string name="reset">重置设备</string>
+    <string name="reset_ask">重置设备？</string>
+
+    <!--心率-->
+    <string name="auto_track">自动心率追踪</string>
+    <string name="frequency">频率</string>
+    <string name="hr_alert">心率范围警报</string>
+    <string name="low_limit">最低心率</string>
+    <string name="high_limit">最高心率</string>
+
+    <!--登录注册-->
+    <string name="login">登录</string>
+    <string name="password">密码</string>
+    <string name="sign_up_title">注册</string>
+    <string name="login_welcome">用户登录</string>
+    <string name="sign_up_welcome">新用户注册</string>
+
+    <!--Timeline-->
+    <string name="timeline_hr">心率</string>
+    <string name="timeline_step">步数</string>
+    <string name="timeline_act">运动时长</string>
+    <string name="timeline_dis">距离</string>
+    <string name="timeline_cal">卡路里</string>
+    <string name="timeline_sleep">睡眠</string>
+
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+
+    <string name="dfu_faild">升级失败</string>
+    <string name="dfu_update_detail">升级中,大概需要5~10分钟</string>
+    <string name="update">升级</string>
+    <string name="the_new_version">当前已是最新版本</string>
+    <string name="update_tip">固件升级要求\n您必須升級最新固件才能正常使用3PLUS,V</string>
+    <string name="get_firversioning">正在获取固件版本</string>
+    <string name="heart_rate">心率</string>
+    <string name="min">最低:</string>
+    <string name="max">最高:</string>
+    <string name="calories">卡路里</string>
+    <string name="calories2">卡</string>
+    <string name="hours">小时</string>
+    <string name="distance">距离</string>
+    <string name="activity">活动</string>
+    <string name="break_time">休息</string>
+    <string name="activity_time">活动</string>
+    <string name="miles1">英里</string>
+    <string name="minutes1">分钟</string>
+    <string name="syncing_try_later">同步中,请稍后再试!!!</string>
+    <string name="leader_board">排行榜</string>
+    <string name="customer_reminder">客户提醒</string>
+    <string name="time1">时间</string>
+    <string name="eat1">用餐</string>
+    <string name="custom">自定义</string>
+    <string name="IOException">网络慢,请稍后再试</string>
+</resources>

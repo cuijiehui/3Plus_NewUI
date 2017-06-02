@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\libs\httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\httpmime-4.1.2_ef462e4daf531c28865dd6571517bdcb8aaaa973.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1_d763cfbf5e22a38ebf5a445d572061c29603cfe6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_63b137d3bdb295bb694456ef30192955d9e31ad2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.newrelic.agent.android\android-agent\5.10.0\74393fcc28139b34962381110cd48ebb3fb708f3\android-agent-5.10.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="74393fcc28139b34962381110cd48ebb3fb708f3">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\android-agent-5.10.0_d02bf5e7f27a9ec8ff247519eccd15f5bf442e3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.tencent.bugly\crashreport\2.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="77ce2479966f7f7fb8c18213136c6282d7390407">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\com.tencent.bugly-crashreport-2.4.0_8f205a2de25bb2216c3fe15fcf1a130607bc3088.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9aa93835393824b436f366120c9ba8a0260ce75d">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\com.android.support-support-v13-22.2.0_1d59ccf2f632588f7dfd677b07271e4d315d9428.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.facebook.rebound\rebound\0.3.8\c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e\rebound-0.3.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\rebound-0.3.8_2b3d1a3e49e919d2565e8622771606a7e2aaa6e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\libs\google-collections-1.0-rc2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9cebebe5d264eb81233027742f776c0d85ce3d6c">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\google-collections-1.0-rc2_03f76ab5b9bb19ea6d0305ca07f564d9b989991a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1_b68c8595ad7161256bdb15b0625f656ffd9caa8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="79a5b6d9fbab3b5fb4c6f86a1ed7a17722fd937b">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_6c7fb6d052d62414854f72a4afdff6c0b01db6b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\3Plus_NewUI\wheel\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a75fbc74d6d22ad5f71ac37e7f334b8158cbf562">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\3Plus_NewUI-wheel-unspecified_36d46ad681a63e25f4060d1a3ef08ed2fffa433b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.bugtags.library\bugtags-lib\2.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6627f8984fa75a2fa59c6fa187d9773ab0d0e3b0">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\com.bugtags.library-bugtags-lib-2.2.0_8629cc8806d39064b02ea6c48f331595f456bfc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\3Plus_NewUI\pullToRefreshlibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="28f082d0cd04b1e3456a022b2ba794c23dd24110">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\3Plus_NewUI-pullToRefreshlibrary-unspecified_f24803274a965a468c2ac71b7ec5bad89ccb2728.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\apk\3Plus_NewUI\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.1_4fa04a621725078531d3a6d9b71782e388147bd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="E:\apk\3Plus_NewUI\app\build\intermediates\pre-dexed\debug\gson-2.2.4_2c454c25ce8ff03f86141f708155254a78f69ff4.jar" />
+    </item>
+
+</items>

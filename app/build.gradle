@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.bugtags.library.plugin'
+
+android {
+    signingConfigs {
+        appscomm {
+            keyAlias 'appscomm'
+            keyPassword 'app123456';
+            storeFile file('/src/appscommkey/appscommkey.jks')
+            storePassword 'app123456'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '24.0.3'
+    defaultConfig {
+        applicationId 'cn.threeplus.appscomm.pedometer'
+        minSdkVersion 18
+        targetSdkVersion 22
+        signingConfig signingConfigs.appscomm
+        // Enabling multidex support. 开关
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            sourceSets {
+                main {
+                    manifest.srcFile 'src/main/AndroidManifest.xml'
+
+                }
+
+
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+    }
+}
+
+
+dependencies {
+    compile files('libs/httpmime-4.1.2.jar')
+    compile project(':wheel')
+    compile project(':pullToRefreshlibrary')
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:support-v13:22.2.0'
+    compile files('libs/google-collections-1.0-rc2.jar')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.bugtags.library:bugtags-lib:latest.integration'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.android.support:multidex:1.0.0'
+}
+
+
+apply plugin: 'bugly'
+
+bugly {
+    appId = "5a74ef8ffc"
+    appKey = "Ic1gwN0bfcIrBvQY"
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:5.+"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'newrelic'
+
+dependencies {
+    compile 'com.newrelic.agent.android:android-agent:5.+'
+}

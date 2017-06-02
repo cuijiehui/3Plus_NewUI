@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_step_view.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\menu\\menu_step_view.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_select_device.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\menu\\menu_select_device.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\menu\\settings_and_about.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\menu\\settings_and_about.xml"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\menu\\help.xml",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\menu\\help.xml"
+    }
+]

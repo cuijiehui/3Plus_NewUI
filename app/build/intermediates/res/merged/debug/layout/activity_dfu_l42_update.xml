@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    android:id="@+id/main">
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical">
+
+            <!-- 右边的按钮: 返回1 -->
+
+            <ImageButton
+                android:id="@+id/btn_left1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="true"
+                android:onClick="btn_return1_clicked"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btn_left2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="false"
+                android:onClick="btn_return2_clicked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dp"
+                android:text="@string/reminder_save"
+                android:textColor="#fff"
+                android:textSize="22dip"
+                android:onClick="inactivity_save"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_edvice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_l42c"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <!--升级-->
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:enabled="true"
+            android:onClick="update"
+            android:background="@drawable/login_ok"
+            android:visibility="gone" />
+        <!--升级成功-->
+        <LinearLayout
+            android:id="@+id/ll_update_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update completed."
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/select"
+                android:layout_marginBottom="10dp"
+
+                />
+            <Button
+                android:id="@+id/bt_update_success"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:enabled="true"
+                android:onClick="update_success"
+                android:background="@drawable/login_ok"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <!--升级失败-->
+        <LinearLayout
+            android:id="@+id/ll_update_faild"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update failed."
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/delete"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:id="@+id/bt_update_fail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:enabled="true"
+            android:onClick="update_fail"
+            android:background="@drawable/login_ok"
+            android:visibility="visible" />
+        </LinearLayout>
+        <!--升级中-->
+        <LinearLayout
+            android:id="@+id/ll_update_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <!--进度条-->
+            <ProgressBar
+                android:id="@+id/showProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_horizontal_holo_dark"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="      Update in progress.\nThis operation can take up\n        3-5 minutes"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

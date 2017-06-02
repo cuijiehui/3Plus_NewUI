@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical" >
+
+    <!-- topbar 标题显示 -->
+	<FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title" />
+
+
+        <ImageButton
+            android:id="@+id/goal_btn_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/topbtn_rebutn_btn_selector"
+            android:onClick="btn_return_clicked"
+            android:visibility="visible" />
+
+
+        <FrameLayout
+            android:id="@+id/framelayout_top_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            >
+             <!-- 右边的按钮: 目标编辑 -->
+            <ImageButton
+                android:id="@+id/btn_notes_edit"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topbtn_edit_matter_selector"
+                android:visibility="gone" />
+            <!-- 右边的按钮:目标编辑确定  -->
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dip"
+                android:text="@string/reminder_save"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:visibility="visible"
+                android:textSize="22dip"
+                />
+            <ImageButton
+                android:id="@+id/btn_notes_edit_ok"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginTop="5dip"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topbtn_add_matter_finish_selector"
+                android:visibility="gone" />
+            <ImageButton
+            android:id="@+id/btn_right_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/topbar_bluetooth_not_connected_selector"
+            android:visibility="gone" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+	<!--<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                android:id="@+id/rl_step"
+			    android:layout_width="fill_parent"
+			    android:layout_height="@dimen/layout_y_70" >
+			
+		        <TextView
+		            android:id="@+id/goal_bar_step_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@android:color/white"
+		            android:textSize="18dip"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dip"
+		            android:text="@string/my_daily_steps"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip" />
+		        
+		        <ImageView
+			        android:id="@+id/goal_bar_img"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginRight="20dip"
+			        android:background="@drawable/more" />
+		        
+		        <EditText
+		            android:id="@+id/et_goal_bar_step_val"
+		            android:layout_width="50dip"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/goal_bar_img"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:layout_marginRight="15dip"
+		            android:textColor="#ff9933"
+		            android:textSize="16dip"
+		            android:inputType="number"
+		            android:text="7000"
+					android:textStyle="bold"
+		            android:visibility="gone" />
+		        
+		        <TextView
+		            android:id="@+id/goal_bar_step_val"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/et_goal_bar_step_val"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+		            android:textColor="@color/white"
+		            android:textSize="16dip"
+					android:textStyle="bold"
+		            android:text="7000" />
+		
+			</RelativeLayout>
+			
+            <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="0.5dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:background="#cccccc" />
+			
+            <RelativeLayout
+                android:id="@+id/rl_minutes"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_y_70"
+                android:visibility="visible" >
+			
+		        <TextView
+		            android:id="@+id/goal_bar_active_minutes_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dip"
+		            android:textColor="@android:color/white"
+		            android:textSize="18dip"
+		            android:text="@string/my_daily_active_minutes"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip" />
+		
+		        <ImageView
+			        android:id="@+id/goal_bar_img2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginRight="20dip"
+			        android:background="@drawable/more"
+					android:visibility="visible" />
+		        
+		        <EditText
+		            android:id="@+id/et_goal_bar_active_minutes_val"
+		            android:layout_width="50dip"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/goal_bar_img2"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+		            android:textColor="#ff9933"
+		            android:textSize="16dip"
+		            android:inputType="number"
+		            android:text="30"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip"
+		            android:visibility="gone" />
+		        
+		        <TextView
+		            android:id="@+id/goal_bar_active_minutes_val"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/et_goal_bar_active_minutes_val"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+					android:textColor="@color/white"
+		            android:textSize="16dip"
+		            android:text="30"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip" />
+		
+			</RelativeLayout>
+			
+            <TextView
+				android:id="@+id/line_act"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0.5dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:background="#cccccc" />
+			<RelativeLayout
+				android:id="@+id/rl_distance"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/layout_y_70" >
+
+				<TextView
+					android:id="@+id/goal_bar_distance_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dip"
+					android:textColor="@android:color/white"
+					android:textSize="18dip"
+					android:text="@string/my_daily_distance"
+					android:textStyle="bold"
+					android:paddingLeft="10dip" />
+
+				<ImageView
+					android:id="@+id/goal_bar_img1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="20dip"
+					android:background="@drawable/more" />
+
+				<EditText
+					android:id="@+id/et_goal_bar_distance_val"
+					android:layout_width="50dip"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@id/goal_bar_img1"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="15dip"
+					android:textColor="#ff9933"
+					android:textSize="16dip"
+					android:inputType="number"
+					android:text="5"
+					android:textStyle="bold"
+					android:paddingLeft="10dip"
+					android:visibility="gone" />
+
+				<TextView
+					android:id="@+id/goal_bar_distance_val"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@id/et_goal_bar_distance_val"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="15dip"
+					android:textColor="@color/white"
+					android:textSize="16dip"
+					android:text="5"
+					android:textStyle="bold"
+					android:paddingLeft="10dip" />
+
+			</RelativeLayout>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="0.5dip"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_calories"
+			    android:layout_width="fill_parent"
+			    android:layout_height="@dimen/layout_y_70" >
+			
+		        <TextView
+		            android:id="@+id/goal_bar_calories_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dip"
+		            android:textColor="@android:color/white"
+		            android:textSize="18dip"
+		            android:text="@string/my_daily_calories"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip" />
+		
+		        <ImageView
+			        android:id="@+id/goal_bar_img3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginRight="20dip"
+			        android:background="@drawable/more" />
+		        
+		        <EditText
+		            android:id="@+id/et_goal_bar_calories_val"
+		            android:layout_width="50dip"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/goal_bar_img3"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+		            android:textColor="#ff9933"
+		            android:textSize="16dip"
+		            android:inputType="number"
+		            android:text="350"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip"
+		            android:visibility="gone" />
+		        
+		        <TextView
+		            android:id="@+id/goal_bar_calories_val"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/et_goal_bar_calories_val"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+					android:textColor="@color/white"
+		            android:textSize="16dip"
+		            android:text="350"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip" />
+		
+			</RelativeLayout>
+			
+            <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="0.5dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:background="#cccccc" />
+			
+            <RelativeLayout
+                android:id="@+id/rl_sleep"
+			    android:layout_width="fill_parent"
+			    android:layout_height="@dimen/layout_y_70" >
+			
+		        <TextView
+		            android:id="@+id/goal_bar_sleep_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dip"
+		            android:textColor="@android:color/white"
+		            android:textSize="18dip"
+		            android:text="@string/my_daily_sleep"
+					android:textStyle="bold"
+		            android:paddingLeft="10dip" />
+		
+		        <ImageView
+			        android:id="@+id/goal_bar_img4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginRight="20dip"
+			        android:background="@drawable/more" />
+		        
+		        <EditText
+		            android:id="@+id/et_goal_bar_sleep_val"
+		            android:layout_width="50dip"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/goal_bar_img4"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+		            android:textColor="#ff9933"
+		            android:textSize="16dip"
+		            android:inputType="number"
+		            android:text="8"
+		            android:visibility="gone" />
+		        
+		        <TextView
+		            android:id="@+id/goal_bar_sleep_val"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/et_goal_bar_sleep_val"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="15dip"
+					android:textColor="@color/white"
+		            android:textSize="16dip"
+					android:textStyle="bold"
+		            android:text="8" />
+		
+			</RelativeLayout>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="0.5dip"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:background="#cccccc" />
+   				    	
+        </LinearLayout>
+
+
+	
+	
+
+</LinearLayout>

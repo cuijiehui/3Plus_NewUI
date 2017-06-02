@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/main"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/background_main"
+              android:orientation="vertical">
+
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title"/>
+
+        <!-- 左边的按钮   android:onClick="btn_left_clicked" -->
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/topbtn_rebutn_btn_selector"
+            android:onClick="btn_return_clicked"
+            android:visibility="visible"/>
+
+        <!-- 右边的按钮 android:onClick="btn_right_clicked" -->
+
+        <TextView
+            android:id="@+id/btn_right"
+            android:layout_width="50dip"
+            android:layout_height="45dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:text="@string/reminder_save"
+            android:textColor="#ffffff"
+            android:textSize="16dip"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:text="@string/remainds_type"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiobutton1"
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/rb_sport_selector"
+                    android:gravity="center"
+                    android:text="@string/sport"
+                    android:textSize="10dip"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton2"
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/rb_sleep_selector"
+                    android:gravity="center"
+                    android:text="@string/sleep"
+                    android:textSize="10dip"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton3"
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/rb_eat_selector"
+                    android:gravity="center"
+                    android:text="@string/eat"
+                    android:textSize="10dip"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton4"
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/rb_medicine_selector"
+                    android:gravity="center"
+                    android:text="@string/medicine"
+                    android:textSize="10dip"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton5"
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/rb_wake_up_selector"
+                    android:gravity="center"
+                    android:text="@string/wake_up"
+                    android:textSize="10dip"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton6"
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/rb_defined_selector"
+                    android:gravity="center"
+                    android:text="@string/remainds_meeting"
+                    android:textSize="10dip"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="49dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="@string/sport"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:layout_width="49dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/sleep"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:layout_width="49dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/eat"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:layout_width="49dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/medicine"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:layout_width="49dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/wake_up"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:layout_width="49dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/remainds_meeting"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/add_note"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edit_frame_color"
+            android:gravity="left"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/line"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dip"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/repeat"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!--<HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >-->
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_m"
+                    android:textOn="@string/reminder_m"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_tu"
+                    android:textOn="@string/reminder_tu"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_w"
+                    android:textOn="@string/reminder_w"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_th"
+                    android:textOn="@string/reminder_th"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_f"
+                    android:textOn="@string/reminder_f"
+                    android:textSize="20dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_sa"
+                    android:textOn="@string/reminder_sa"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton_time7"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/toggle_week_selector"
+                    android:textColor="#fff"
+                    android:textOff="@string/reminder_su"
+                    android:textOn="@string/reminder_su"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/remind_time"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_goal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_time"
+                android:layout_width="80dip"
+                android:layout_height="30dip"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/remind_time_bg"
+                android:gravity="center"
+                android:text="00:00"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/rbngp_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbn_am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:button="@drawable/rbn_status"
+                    android:text="@string/reminder_am"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/rbn_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:button="@drawable/rbn_status"
+                    android:paddingLeft="10dp"
+                    android:text="@string/reminder_pm"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/btn_edit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/btn_edit_time_selector"
+                android:onClick="btn_edit_time_clicked"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_ok"
+            android:clickable="true"
+            android:onClick="btn_modifypwd_clicked"
+            android:textColor="#fff"
+            android:textSize="22dip"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <!--新UI-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--activity-->
+            <LinearLayout
+                android:id="@+id/activityLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/activity1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:text="@string/break_time"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/activityExpansionToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_go"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </LinearLayout>
+
+                <!--展开部分-->
+                <LinearLayout
+                    android:id="@+id/activityExpansionLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_reminder"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem1"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_su"
+                                android:textOn="@string/reminder_su"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_m"
+                                android:textOn="@string/reminder_m"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_tu"
+                                android:textOn="@string/reminder_tu"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_wed"
+                                android:textOn="@string/reminder_wed"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_th"
+                                android:textOn="@string/reminder_th"
+                                android:textSize="20dip"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem6"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_f"
+                                android:textOn="@string/reminder_f"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/activityToggleButtonItem7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_sa"
+                                android:textOn="@string/reminder_sa"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/timeLinearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time1"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/activityTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="00:00"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/activityAmPmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_am"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--sleep-->
+            <LinearLayout
+                android:id="@+id/sleepLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/sleep1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:text="@string/sleep"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/sleepExpansionToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_go"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </LinearLayout>
+
+                <!--展开部分-->
+                <LinearLayout
+                    android:id="@+id/sleepExpansionLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_reminder"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem1"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_su"
+                                android:textOn="@string/reminder_su"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_m"
+                                android:textOn="@string/reminder_m"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_tu"
+                                android:textOn="@string/reminder_tu"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_wed"
+                                android:textOn="@string/reminder_wed"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_th"
+                                android:textOn="@string/reminder_th"
+                                android:textSize="20dip"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem6"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_f"
+                                android:textOn="@string/reminder_f"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/sleepToggleButtonItem7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_sa"
+                                android:textOn="@string/reminder_sa"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time1"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/sleepTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="00:00"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/sleepAmPmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_am"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--eat-->
+            <LinearLayout
+                android:id="@+id/eatLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/eat1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:text="@string/eat1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/eatExpansionToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_go"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </LinearLayout>
+
+                <!--展开部分-->
+                <LinearLayout
+                    android:id="@+id/eatExpansionLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_reminder"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem1"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_su"
+                                android:textOn="@string/reminder_su"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_m"
+                                android:textOn="@string/reminder_m"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_tu"
+                                android:textOn="@string/reminder_tu"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_wed"
+                                android:textOn="@string/reminder_wed"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_th"
+                                android:textOn="@string/reminder_th"
+                                android:textSize="20dip"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem6"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_f"
+                                android:textOn="@string/reminder_f"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/eatToggleButtonItem7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_sa"
+                                android:textOn="@string/reminder_sa"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time1"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/eatTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="00:00"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/eatAmPmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_am"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Medicine-->
+            <LinearLayout
+                android:id="@+id/medicineLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/medicine1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:text="@string/medicine"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/medicineExpansionToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_go"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </LinearLayout>
+
+                <!--展开部分-->
+                <LinearLayout
+                    android:id="@+id/medicineExpansionLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_reminder"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem1"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_su"
+                                android:textOn="@string/reminder_su"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_m"
+                                android:textOn="@string/reminder_m"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_tu"
+                                android:textOn="@string/reminder_tu"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_wed"
+                                android:textOn="@string/reminder_wed"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_th"
+                                android:textOn="@string/reminder_th"
+                                android:textSize="20dip"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem6"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_f"
+                                android:textOn="@string/reminder_f"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/medicineToggleButtonItem7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_sa"
+                                android:textOn="@string/reminder_sa"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time1"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/medicineTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="00:00"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/medicineAmPmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_am"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--wake up-->
+            <LinearLayout
+                android:id="@+id/wakeUpLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/wake_up1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:text="@string/wake_up"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/wakeUpExpansionToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_go"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </LinearLayout>
+
+                <!--展开部分-->
+                <LinearLayout
+                    android:id="@+id/wakeUpExpansionLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_reminder"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem1"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_su"
+                                android:textOn="@string/reminder_su"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_m"
+                                android:textOn="@string/reminder_m"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_tu"
+                                android:textOn="@string/reminder_tu"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_wed"
+                                android:textOn="@string/reminder_wed"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_th"
+                                android:textOn="@string/reminder_th"
+                                android:textSize="20dip"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem6"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_f"
+                                android:textOn="@string/reminder_f"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/wakeUpToggleButtonItem7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_sa"
+                                android:textOn="@string/reminder_sa"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time1"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/wakeUpTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="00:00"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/wakeUpAmPmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_am"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--custom-->
+            <LinearLayout
+                android:id="@+id/customLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/custom1"/>
+                    <TextView
+                        android:id="@+id/custom_tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:hint="@string/custom"
+                        android:textColorHint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:background="#00000000"
+                        android:textSize="20dp"
+                        android:visibility="gone"/>
+                    <EditText
+                        android:id="@+id/customEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:hint="@string/custom"
+                        android:textColorHint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:background="#00000000"
+                        android:textSize="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/customExpansionToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_go"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </LinearLayout>
+
+                <!--展开部分-->
+                <LinearLayout
+                    android:id="@+id/customExpansionLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_reminder"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#7fffffff"
+                        android:text="@string/custom"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem1"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_su"
+                                android:textOn="@string/reminder_su"
+                                android:textSize="20sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_m"
+                                android:textOn="@string/reminder_m"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_tu"
+                                android:textOn="@string/reminder_tu"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_wed"
+                                android:textOn="@string/reminder_wed"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_th"
+                                android:textOn="@string/reminder_th"
+                                android:textSize="20dip"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem6"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_f"
+                                android:textOn="@string/reminder_f"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ToggleButton
+                                android:id="@+id/customToggleButtonItem7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="0dip"
+                                android:background="#00ffffff"
+                                android:textColor="@drawable/toggle_week_selector"
+                                android:textOff="@string/reminder_sa"
+                                android:textOn="@string/reminder_sa"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time1"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/customTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="00:00"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/customAmPmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_am"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

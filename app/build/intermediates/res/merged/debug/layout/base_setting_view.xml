@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?><!--    android:background="@color/bg_windows_color"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title" />
+
+        <!-- 左边的按钮   android:onClick="btn_left_clicked" -->
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/topbtn_rebutn_btn_selector"
+            android:onClick="btn_return_clicked"
+            android:visibility="visible" />
+
+        <!-- 右边的按钮 android:onClick="btn_right_clicked" -->
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/topbtn_add_matter_finish_selector"
+            android:onClick="btn_ok_clicked"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dip"
+            android:text="@string/reminder_save"
+            android:textColor="#fff"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="357dp"
+        android:layout_below="@id/pttopbar"
+        android:orientation="vertical">
+
+        <!--@dimen/layout_y_70-->
+        <!-- 用户名 -->
+        <RelativeLayout
+            android:id="@+id/rl_step"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/reg_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <cn.appscomm.pedometer.UI.CircularImage
+                android:id="@+id/iv_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="12dp"
+                android:cursorVisible="false"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more" />
+
+            <EditText
+                android:id="@+id/reg_username"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_toLeftOf="@id/goal_bar_img"
+                android:background="#00F47926"
+                android:gravity="center_vertical|right"
+                android:hint="@string/reg_name"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <!-- 性别 -->
+        <RelativeLayout
+            android:id="@+id/layout_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/sex"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_toLeftOf="@id/goal_bar_img1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="0dp"
+                android:text="@string/reg_male"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <!-- 身高 -->
+        <RelativeLayout
+            android:id="@+id/layout_height"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/reg_height"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/height_textview_tmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more" />
+
+            <TextView
+                android:id="@+id/height_textview"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_toLeftOf="@id/goal_bar_img2"
+                android:gravity="center_vertical|right"
+                android:paddingRight="0dp"
+                android:text="170"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <!-- 体重 -->
+        <RelativeLayout
+            android:id="@+id/layout_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/reg_weight"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weight_textview_tmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more" />
+
+            <TextView
+                android:id="@+id/weight_textview"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_toLeftOf="@id/goal_bar_img3"
+                android:gravity="center_vertical|right"
+                android:paddingRight="0dp"
+                android:text="80"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <!-- 邮箱 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/reg_email"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_toLeftOf="@id/goal_bar_img4"
+                android:gravity="center_vertical|right"
+                android:paddingRight="0dp"
+                android:text="imba@163.com"
+                android:textColor="@color/gray6"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <!-- 出生日期 -->
+        <RelativeLayout
+            android:id="@+id/layout_birthdate"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/reg_birthday"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more" />
+
+            <TextView
+                android:id="@+id/tv_date_show"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_toLeftOf="@id/goal_bar_img5"
+                android:gravity="center_vertical|right"
+                android:paddingRight="0dp"
+                android:text="1999-11-11"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <!-- 修改密码 -->
+        <RelativeLayout
+            android:id="@+id/layout_change_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="@string/changepassword"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goal_bar_img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/more" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageview_pedometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/personal_default"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edittext_name1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="#B8B8B8"
+                android:gravity="center"
+                android:text="human"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_img"
+                android:layout_width="72dip"
+                android:layout_height="72dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/icon"
+                android:clickable="false"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <cn.appscomm.pedometer.UI.CircularImage
+                    android:id="@+id/cover_user_photo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dip"
+                android:clickable="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_male"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rb_gender_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="left" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/men_select"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/reg_male"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_female"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/rb_gender_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/lady_select"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/reg_female"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="gender_clicked"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_contry"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/sex"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/reg_username"
+                android:textColor="#969696"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edittext_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/modify_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="btn_changepwd_clicked"
+                android:text="@string/changepassword"
+                android:textColor="#969696"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_gender1"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="gender_clicked"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="left"
+                android:text="@string/sex"
+                android:textColor="#969696"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvgender1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0.92"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- 出生年月日 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="birth_clicked"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="1980"
+                android:textColor="#000"
+                android:textSize="16dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textview_month_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1M1D"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="left"
+                android:text="@string/date_of_birth"
+                android:textColor="#969696"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1980"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dip"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="left"
+                android:text="@string/country"
+                android:textColor="#969696"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spnlist1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_bar"
+        android:longClickable="false"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_modify_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/oldpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:hint="Enter Current Password"
+            android:maxLength="16"
+            android:password="true"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/newpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:hint="Enter New Password"
+            android:maxLength="16"
+            android:password="true"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/repeatedpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:hint="@string/confirmpassword"
+            android:maxLength="16"
+            android:password="true"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/reg_btn_selector"
+        android:clickable="true"
+        android:onClick="btn_save_clicked"
+        android:text="@string/reminder_save"
+        android:textColor="#fff"
+        android:textSize="22dip"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_modify_pwd"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/layout_modify_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_bar"
+        android:clickable="true"
+        android:onClick="btn_modifypwd_clicked"
+        android:text="@string/changepassword"
+        android:textColor="@color/white"
+        android:textSize="18dip"
+        android:visibility="gone" />
+    <!--android:background="@drawable/reg_btn_selector"-->
+</RelativeLayout>

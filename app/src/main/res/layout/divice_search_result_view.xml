@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otherlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical" >
+
+    <!-- topbar 标题显示 -->
+
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title" />
+
+        <!-- 左边的按钮   android:onClick="btn_left_clicked"   -->
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/topbtn_rebutn_btn_selector"
+            android:onClick="btn_return_clicked"
+            android:visibility="visible" />
+        
+    </FrameLayout>
+    
+    
+    <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="8dip"
+    	android:gravity="center"
+    	android:padding="8dp"
+        android:text=""
+        android:textColor="#12B8BA"
+        android:textSize="13sp" 
+        />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"  
+        android:gravity="center_vertical" 
+        >
+        
+        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="0dip"
+            android:text="@string/turn_on_bluetooth_content"
+            android:textColor="#000"
+            android:textSize="17sp" />
+         
+         <Button
+		    android:id="@+id/btn_next"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"		    
+            android:layout_centerVertical="true"
+		    android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:text="@string/next"
+        	android:textColor="#fff"
+        	android:textSize="15sp"
+		    android:background="@drawable/btn_green_selector"
+		    android:onClick="btn_next_clicked"        
+		    android:visibility="visible" />
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

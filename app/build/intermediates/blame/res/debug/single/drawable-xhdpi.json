@@ -1,0 +1,1230 @@
+[
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\silver.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\silver.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_rssi_1_bar.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_rssi_1_bar.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_seek_thumbs.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_seek_thumbs.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\leader_board.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\leader_board.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_del_pic.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_del_pic.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_facebook.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_facebook.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\step_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\step_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\lady_select.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\lady_select.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\personal_default.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\personal_default.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sierra.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sierra.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_addfriends.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\menu_addfriends.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\diamond.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\diamond.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_print.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_print.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_copy.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_copy.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0006.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0006.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\go_in1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\go_in1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_email.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_email.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_connected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_connected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_contact.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_contact.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0008.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0008.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\wake_up1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\wake_up1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\select_matter_remind.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\select_matter_remind.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_l30d_done.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_l30d_done.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\u3.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\u3.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_75.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_75.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\activity1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\activity1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0011.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0011.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_week.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_week.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\edit_time.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\edit_time.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_setting.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dot_on.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\dot_on.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sw_check_un.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_check_un.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_rssi_3_bars.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_rssi_3_bars.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_del_on.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_del_on.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\layer_11.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\layer_11.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\reg_info.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\reg_info.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\account_icon.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\account_icon.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\briness_rf.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\briness_rf.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\menu_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\page_pre.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\page_pre.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_select_medicine.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_select_medicine.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\premiere.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\premiere.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_light_l42c.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_light_l42c.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\mail_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\mail_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dot_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\dot_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dusk.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\dusk.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bluetooth_not_connected_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bluetooth_not_connected_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_cal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_cal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\find_friends.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\find_friends.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\briness_lf.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\briness_lf.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_24_date.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_24_date.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_distance.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_distance.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_select_sport.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_select_sport.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\faile_42.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\faile_42.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_bar.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bg_bar.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bind_select_image.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bind_select_image.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\account.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\account.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\welcom_btn_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\welcom_btn_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bed_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bed_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_12.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_12.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\heart_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\heart_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\button_back.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\button_back.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\activity.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\activity.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_time.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_time.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0004.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0004.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\calendar.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\calendar.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\toady_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\toady_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\custom1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\custom1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\medals_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\medals_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\u_back.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\u_back.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\briness_mf.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\briness_mf.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\pair_device.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\pair_device.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\go_donw1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\go_donw1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_no_select_wakeup.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_no_select_wakeup.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_3plus_title.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\logo_3plus_title.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_antilost.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_antilost.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile_dis.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile_dis.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\select_device.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\select_device.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\nordic_logo_horiz_dark.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\nordic_logo_horiz_dark.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_l30d_press.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_l30d_press.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\play_ok.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\play_ok.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0001.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0001.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_cal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_cal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_upgrade.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_upgrade.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\pair_ok.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\pair_ok.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_no_select_sport.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_no_select_sport.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_12_date_battery.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_12_date_battery.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\rounded_rectangle_5_copy.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\rounded_rectangle_5_copy.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\edit_matter_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\edit_matter_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sw_on.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_on.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\feedback.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\feedback.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\go_in.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\go_in.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_100.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_100.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_seek_thumb_unchecked.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_seek_thumb_unchecked.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0002.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0002.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\confirm_binding_l42c.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\confirm_binding_l42c.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\reminders.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\reminders.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\rbn_cancel.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\rbn_cancel.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_disconnected.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_disconnected.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_l30d_screen.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_l30d_screen.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_w01.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_w01.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_no_select_sleep.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_no_select_sleep.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_home.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_home.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bronze.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bronze.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bind_dis_l42c.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bind_dis_l42c.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\distan_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\distan_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\checked.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\checked.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\select_device2.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\select_device2.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_12_date.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_12_date.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0012.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0012.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_time_bg.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_time_bg.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_rssi_2_bars.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_rssi_2_bars.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\briness_me.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\briness_me.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\search.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\search.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sphere.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sphere.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_miscall.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_miscall.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_no_select_eat.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_no_select_eat.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0003.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0003.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_item_sport.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_item_sport.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ring.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ring.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0009.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0009.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\next.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\next.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_day.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_day.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_notify_cancel.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_notify_cancel.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_longpressed_holo.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\drawer_shadow.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_savepic.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_savepic.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sync.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sync.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sw_checked.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_checked.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_25.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_25.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_select_defined.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_select_defined.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_xx.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_xx.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_bl.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_bl.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\select_move_remind.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\select_move_remind.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\calu_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\calu_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_select_wakeup.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_select_wakeup.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sleep.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sleep.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\goals.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\goals.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\selete.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\selete.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\edit_matter.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\edit_matter.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bind_success_l28t.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bind_success_l28t.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\briness_re.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\briness_re.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\clock.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\clock.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l11list.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l11list.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l42c_time.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l42c_time.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\white_choice.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\white_choice.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\layer_38.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\layer_38.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_l39.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_l39.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_bar2.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bg_bar2.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\resetwatch_l42c.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\resetwatch_l42c.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\confirm_binding_l28t.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\confirm_binding_l28t.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_twitter.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_twitter.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\u4.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\u4.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_line.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_line.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\line.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\line.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_msg.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_msg.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_appsettings.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\menu_appsettings.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_dfu_feature.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_dfu_feature.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0010.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0010.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\num.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\num.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bluetooth_on.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bluetooth_on.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l11_update.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l11_update.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_no_select_defined.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_no_select_defined.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_default_pic.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_default_pic.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0005.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0005.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_backgroup.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_backgroup.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\medicine1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\medicine1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_del_on_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_del_on_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sun.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sun.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\select.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\select.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\added.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\added.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\orbit.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\orbit.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gender_select.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\gender_select.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_main.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bg_main.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sleep1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sleep1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_heart.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_heart.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\share_mail.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\share_mail.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_light_l39.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_light_l39.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_sms.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_sms.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\more.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\more.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\warn.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\warn.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bluetooth_not_connected_normal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bluetooth_not_connected_normal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\mon.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\mon.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile_cal.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile_cal.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\edit_time_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\edit_time_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\top_week_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\top_week_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\back.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bind_success_l42c.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bind_success_l42c.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\clock_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\clock_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_logo.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_logo.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_02.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_02.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\background_main.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\background_main.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\advanced_select.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\advanced_select.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\top_day_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\top_day_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile_step.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile_step.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sleep_set_btn_bg.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sleep_set_btn_bg.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\play_unbind.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\play_unbind.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\timedateweek.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\timedateweek.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\tr.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\tr.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_select_sleep.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_select_sleep.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_light_l28t.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_light_l28t.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_matter_finish.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\add_matter_finish.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\u2.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\u2.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dot.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\dot.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\top_months_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\top_months_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\no_select_matter_remind.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\no_select_matter_remind.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\heart_rate.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\heart_rate.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\men_select.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\men_select.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gender_noselect.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\gender_noselect.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_select_eat.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_select_eat.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sw_off1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_off1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sw_off.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\sw_off.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_0007.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_0007.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\page_next.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\page_next.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_24_vertical.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_24_vertical.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_24_date_battery.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_24_date_battery.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\check_un.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\check_un.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\settings.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\settings.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_now.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_now.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\logo.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_focused_holo.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\eat1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\eat1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_call.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_call.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_timer.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_timer.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\gold.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\gold.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_about.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_about.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_style_alert_dialog_background.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_style_alert_dialog_background.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\zip.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\zip.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_mcp_feature_fg.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_mcp_feature_fg.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\medals_on.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\medals_on.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_50.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_50.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_0.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_0.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bedm_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\bedm_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\welcom_btn_nopressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\welcom_btn_nopressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\distance.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\distance.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\delete.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\delete.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_bl_1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_bl_1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_l30d_tap.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_l30d_tap.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_04.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_04.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\noti_socmsg.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\noti_socmsg.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\steps.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\steps.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_backgroup_pressed.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\btn_backgroup_pressed.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_ok.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\login_ok.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\main_28t.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\main_28t.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\toady_on.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\toady_on.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\caloeies.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\caloeies.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\lock_ico.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\lock_ico.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\img_plan_gray_right.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\img_plan_gray_right.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\u1.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\u1.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_help.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_help.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_profile_time.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile_time.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\no_select_move_remind.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\no_select_move_remind.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_matter_finish_pressed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\add_matter_finish_pressed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\update_42.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\update_42.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\friends.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\friends.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_12_vertical.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\time_12_vertical.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\l38i_failed.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\l38i_failed.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_circle.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_circle.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_l28t.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_l28t.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\workouts_step.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\workouts_step.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\battery_03.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\battery_03.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\play_no.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\play_no.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\remind_no_select_medicine.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\remind_no_select_medicine.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cancel.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\cancel.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_rssi_0_bar.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\src\\main\\res\\drawable-xhdpi\\ic_rssi_0_bar.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "E:\\apk\\3Plus_NewUI\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    }
+]

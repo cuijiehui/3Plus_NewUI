@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/countrylayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <!-- topbar 标题显示 -->
+    <FrameLayout
+        android:id="@+id/pttopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <include layout="@layout/title" />
+        
+		<FrameLayout
+	        android:id="@+id/framelayout_top_right"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dip"
+	        android:layout_gravity="right|center_vertical"
+	        >
+	         <!-- 右边的按钮: 返回 -->
+
+            <ImageButton
+                android:id="@+id/btn_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/topbtn_rebutn_btn_selector"
+                android:clickable="false"
+                android:onClick="btn_return_clicked"
+                android:visibility="visible" />
+
+		</FrameLayout>
+        
+    </FrameLayout>
+    
+     <!-- 添加一个ListView控件 -->
+	 <ListView
+	    android:id="@+id/lv_country"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+
+</LinearLayout>
